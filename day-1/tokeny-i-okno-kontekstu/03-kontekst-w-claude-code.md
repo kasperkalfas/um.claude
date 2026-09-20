@@ -70,7 +70,7 @@ zbliża się do limitu. Warto wiedzieć, na co patrzeć.
      rozmowy, więc każda zbędna linijka kosztuje tokeny za każdym razem;
   5. kiedy Claude zaczyna „gubić wątek", nie walczcie – `/compact` albo
      `/clear` i krótkie przypomnienie, o co chodzi.
-- Skille, konektory i serwery MCP (zadania 4–8 w `../claude-zadania/`)
+- Skille, konektory i serwery MCP (zadania 4–5 i 7–8 w `../claude-zadania/`)
   też zajmują miejsce w oknie – ich opisy są wczytywane do rozmowy.
   Dziesięć podpiętych narzędzi „naraz" to realny koszt, nawet gdy ich
   nie używacie.

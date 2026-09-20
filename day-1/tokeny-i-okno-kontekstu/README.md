@@ -6,8 +6,12 @@ prowadzący: Kasper Kalfas).
 
 **Miejsce w agendzie:** krótki wstęp teoretyczny **na początku Bloku D
 (Claude Code – pierwszy kontakt)** albo materiał do samodzielnej pracy
-między Blokiem C a D. Pięć zadań, łącznie ok. 34 minuty. Zadanie 3 wymaga
-zainstalowanego Claude Code (`../claude-code/06-instalacja-claude-code-cli.md`).
+między Blokiem C a D. Zadania 1–4 to praktyka na tokenizerze i w Claude Code,
+5–6 to teoria (MCP, wtyczki), 7–8 to dłuższe demo wtyczki Data w Cowork, 9–11 to praca
+własna (skill z internetu, własna wtyczka Wydziału, wtyczka dla zespołu). Zadania 1–6
+łącznie ok. 42 minuty, zadania 7–8 osobno ok. 45 minut, zadania 9–11 ok. 95 minut. Zadanie 3 wymaga
+zainstalowanego Claude Code (`../claude-code/06-instalacja-claude-code-cli.md`),
+zadania 6–11 – aplikacji Claude Cowork (`../claude-code/01-czym-jest-cowork.md`).
 
 ## Po co to w ogóle?
 
@@ -45,6 +49,33 @@ kosztuje.
 - [ ] **[05 – MCP – jak Claude sięga po dane i narzędzia poza rozmową](05-mcp-czyli-jak-claude-siega-po-dane.md)** *(8 min, teoria)*
       — serwer / klient / model, co z konektorów trafia do okna kontekstu,
       dlaczego podpięcie ERP to decyzja IT i Zamawiającego, nie użytkownika.
+- [ ] **[06 – Wtyczki (plugins) – skille, konektory, komendy i subagenci w jednym](06-wtyczki-czyli-skille-konektory-i-komendy-w-jednym.md)** *(8 min, teoria + podgląd katalogu)*
+      — cztery elementy wtyczki, subagenci i ich własne okna kontekstu,
+      katalog w Cowork (Customize → Browse plugins) bez instalowania.
+- [ ] **[07 – Od surowego Excela do dashboardu – wtyczka Data w Cowork](07-dashboard-z-wtyczka-data.md)** *(25 min, demo prowadzącego / praca własna)*
+      — `/explore-data` → `/validate` → czyszczenie do `_v1` →
+      `/build-dashboard` na fikcyjnych zestawieniach; klucz odpowiedzi w środku.
+- [ ] **[08 – Od analizy do prezentacji dla przełożonego – skill statystyczny i PowerPoint](08-statystyka-i-prezentacja-z-wtyczka-data.md)** *(20 min, demo prowadzącego / praca własna)*
+      — skill `statistical-analysis`, prezentacja `.pptx` z wyników zadania 7,
+      kontrola liczb na slajdach, Settings → Usage (ile to kosztowało).
+- [ ] **[09 – Prognoza wykonania na rok – skill z internetu w Cowork](09-prognoza-z-zewnetrznym-skillem.md)** *(30 min, praca własna)*
+      — skills.sh → checklist bezpieczeństwa → upload `SKILL.md` → ARIMA/SARIMA
+      na fikcyjnych 36 miesiącach (`materialy/`), sprawdzian „średnia × 12" (Proces 2).
+- [ ] **[10 – Własna wtyczka Wydziału – analiza odchyleń i zestawienie dla banku jedną komendą](10-wlasna-wtyczka-wydzialu.md)** *(40 min, praca własna)*
+      — szablon opisu wtyczki do wklejenia (profil, struktura działów, dwie
+      komendy, skill z zasadami), złożenie przez Cowork, test na plikach z repo,
+      prezentacja. Most do `/zamknij-miesiac` w Dniu 2.
+- [ ] **[11 – Wtyczka dla zespołu – pobierz, przekaż, wgraj, popraw](11-wtyczka-dla-zespolu.md)** *(25 min, praca własna w parach)*
+      — plik `.plugin` jako dokument zespołu: Download → przegląd → Upload na
+      drugim koncie, ten sam test u obu, edycja progu, właściciel wersji,
+      wyłączanie; reguła „wtyczka czy skill".
+
+## Dane w `materialy/`
+
+Fikcyjne dane do zadania 9: `wykonanie_miesieczne_2023-2025.xlsx` (36 miesięcy
+× 8 działów, z celową sezonowością i trendem) i `kalendarz_2026.xlsx` (do
+wypełnienia prognozą). `python generuj_prognoza.py` odtwarza oba pliki i
+wypisuje klucz odpowiedzi (mnożniki sezonowe i trend per dział).
 
 ## Trzy liczby do zapamiętania
 

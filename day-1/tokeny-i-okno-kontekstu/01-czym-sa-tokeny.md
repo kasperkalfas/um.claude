@@ -30,8 +30,8 @@ Przykład – zdanie **`Welcome to the boot camp!`** to 6 tokenów:
 Welcome | to | the | boot | camp | !
 ```
 
-Uwaga: „bootcamp" nie jest jednym tokenem, tylko dwoma (`boot` + `camp`),
-a wykrzyknik to osobny token. Token to nie słowo – to „kawałek, który
+Uwaga: `boot camp` to dwa tokeny (a gdyby napisać to łącznie, `bootcamp`
+też rozpadłoby się na kawałki), wykrzyknik to osobny token. Token to nie słowo – to „kawałek, który
 model widział wystarczająco często, żeby dostać własny numer".
 
 ## Materiały
@@ -53,8 +53,8 @@ model widział wystarczająco często, żeby dostać własny numer".
    które „widzi" model.
 3. Teraz to samo po polsku: `Witamy na szkoleniu!` Porównajcie liczbę
    tokenów. Zwróćcie uwagę, że polskie słowa dzielą się na więcej
-   kawałków (np. `szko` + `leniu`) – tokenizery były trenowane głównie na
-   angielskim.
+   kawałków (słowo „szkoleniu" to zwykle 2–3 tokeny) – tokenizery były
+   trenowane głównie na angielskim.
 4. Wklejcie zdanie „urzędowe" (fikcyjne):
    `Wydział Finansowy przekazuje zestawienie wykonania budżetu za sierpień 2026 r. w załączeniu.`
    Zapiszcie: ile znaków, ile tokenów. Policzcie **znaki ÷ tokeny** – to
