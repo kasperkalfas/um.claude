@@ -6,7 +6,7 @@ prowadzący: Kasper Kalfas).
 
 **Miejsce w agendzie:** krótki wstęp teoretyczny **na początku Bloku D
 (Claude Code – pierwszy kontakt)** albo materiał do samodzielnej pracy
-między Blokiem C a D. Cztery zadania, łącznie ok. 26 minut. Zadanie 3 wymaga
+między Blokiem C a D. Pięć zadań, łącznie ok. 34 minuty. Zadanie 3 wymaga
 zainstalowanego Claude Code (`../claude-code/06-instalacja-claude-code-cli.md`).
 
 ## Po co to w ogóle?
@@ -42,6 +42,9 @@ kosztuje.
 - [ ] **[04 – „Proszę" i „dziękuję" też kosztują – jak pisać oszczędnie](04-grzecznosc-kosztuje-tokeny.md)** *(6 min)*
       — to samo polecenie w trzech wersjach na tokenizerze: rzeczowe,
       „pismo urzędowe" i P.K.Z.O. Co tniemy, a czego nie.
+- [ ] **[05 – MCP – jak Claude sięga po dane i narzędzia poza rozmową](05-mcp-czyli-jak-claude-siega-po-dane.md)** *(8 min, teoria)*
+      — serwer / klient / model, co z konektorów trafia do okna kontekstu,
+      dlaczego podpięcie ERP to decyzja IT i Zamawiającego, nie użytkownika.
 
 ## Trzy liczby do zapamiętania
 

@@ -18,7 +18,7 @@ agenda/        agenda szkolenia (md + pdf)
 day-1/         Dzień 1 – prezentacje i ćwiczenia (Claude Czat, Claude Code)
   claude-zadania/      8 zadań z Claude Czat (3 na żywo w Bloku C + 5 dodatkowych)
   claude-code/         19 krótkich zadań: Cowork, wtyczka Chrome, Claude Code – pierwszy kontakt (Blok D)
-  tokeny-i-okno-kontekstu/  4 zadania: tokeny (tokenizer), okno kontekstu, /context /compact /clear, oszczędne polecenia (wstęp do Bloku D)
+  tokeny-i-okno-kontekstu/  5 zadań: tokeny (tokenizer), okno kontekstu, /context /compact /clear, oszczędne polecenia, MCP (wstęp do Bloku D)
   claude-code-cli/     10 zadań Claude Code + Excel: Proces 1 i 2, przepis, skrypt, własna komenda (Dzień 1)
     materialy/         fikcyjne eksporty ERP, zestawienia, generator (generuj_dane.py)
   materialy/           fikcyjne pliki Excel do ćwiczeń z czatu i Bloku D
