@@ -12,17 +12,17 @@ osobnych kliknięć.
 
 ## Materiały
 
-- Folder testowy z kilkoma fikcyjnymi plikami (np. 4–5 kopii
-  `zestawienie_przykladowe.xlsx` pod różnymi nazwami, przygotowane
-  wcześniej przez prowadzącego).
+- Folder `test-claude-code` na Pulpicie (kopia
+  `../materialy/test-claude-code/`) – w folderze głównym są 4 pliki
+  `.xlsx` z września i października, w podfolderze `archiwum/` kolejne 2.
 
 ## Kroki
 
 1. Zapytajcie: *„Ile plików .xlsx jest w tym folderze i jak się
    nazywają?"* – żeby zobaczyć punkt wyjścia.
 2. Poproście o działanie na **wszystkich naraz**, jednym poleceniem:
-   *„Dodaj do nazwy każdego pliku .xlsx w tym folderze prefiks
-   »2026_wrzesien_«, zachowując resztę nazwy."*
+   *„Dodaj do nazwy każdego pliku .xlsx w folderze głównym (nie w
+   archiwum) prefiks »UM_«, zachowując resztę nazwy."*
 3. Zanim Claude Code coś zmieni, pokaże listę plików, które zamierza
    zmienić i jak będą się nazywać – dopiero po Waszej zgodzie wykonuje
    zmianę na wszystkich naraz.

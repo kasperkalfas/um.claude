@@ -9,6 +9,12 @@ nieodwracalnego bez pytania, a Ty masz zawsze ostatnie słowo.
 **Poziom:** podstawowy
 **Czas:** ok. 6 minut
 
+## Materiały
+
+- Folder `test-claude-code` na Pulpicie (kopia
+  `../materialy/test-claude-code/`, ta sama co w zadaniach 7–9) – w
+  folderze głównym jest `zestawienie_przykladowe.xlsx`.
+
 ## Kroki
 
 1. Poproście Claude Code o coś, co wymaga zmiany pliku, np.: *„Zmień

@@ -15,9 +15,12 @@ w Opolu.
 
 ```
 agenda/        agenda szkolenia (md + pdf)
-day-1/         Dzień 1 – prezentacje, ćwiczenia z Claude, pliki wsadowe
-  claude-zadania/   8 zadań z Claude Czat (3 na żywo w Bloku C + 5 dodatkowych)
-  materialy/        fikcyjne pliki Excel do ćwiczeń
+day-1/         Dzień 1 – prezentacje i ćwiczenia (Claude Czat, Claude Code)
+  claude-zadania/      8 zadań z Claude Czat (3 na żywo w Bloku C + 5 dodatkowych)
+  claude-code/         19 krótkich zadań: Cowork, wtyczka Chrome, Claude Code – pierwszy kontakt (Blok D)
+  claude-code-cli/     10 zadań Claude Code + Excel: Proces 1 i 2, przepis, skrypt, własna komenda (Dzień 1)
+    materialy/         fikcyjne eksporty ERP, zestawienia, generator (generuj_dane.py)
+  materialy/           fikcyjne pliki Excel do ćwiczeń z czatu i Bloku D
 materialy/     materiały pomocnicze (data storytelling, DataPOV) – Dzień 3
 umowa/         dokumenty umowne i wzory (lokalnie, poza repozytorium)
 CLAUDE.md      kontekst projektu dla Claude Code (lokalnie, poza repozytorium)
@@ -32,7 +35,7 @@ Część plików jest celowo wyłączona z repozytorium przez `.gitignore`
 | Dzień | Data | Temat | Materiały |
 |---|---|---|---|
 | 1 | 22.09.2026 | Podstawy AI, dane jako fundament, Claude Czat, pierwszy kontakt z Claude Code, Power BI / Excel | `day-1/` — gotowe |
-| 2 | 23.09.2026 | Praca na komórkach Excela i automatyzacja z Claude Code (CLI) | do przygotowania |
+| 2 | 23.09.2026 | Praca na komórkach Excela i automatyzacja z Claude Code (CLI) | `day-1/claude-code-cli/` — ćwiczenia i dane gotowe, prezentacja do przygotowania |
 | 3 | 25.09.2026 | DataPOV, prezentacje danych z Claude, wizualizacja w PowerPoint, mapowanie procesów | `materialy/` — kontekst gotowy, prezentacje do przygotowania |
 
 ### Dzień 1 — zawartość
@@ -42,8 +45,29 @@ Część plików jest celowo wyłączona z repozytorium przez `.gitignore`
 | A | 30 min | AI Intro → ML & Gen AI | `day-1/day-1-ai-intro.pptx` |
 | B | 30 min | Dane jako fundament — „Data First, AI Second" | `day-1/day-1-data-first-ai-second.pptx` |
 | C | 60 min | Claude Czat w przeglądarce — interfejs i promptowanie | `day-1/day1-claude.pptx` + [`day-1/claude-zadania/`](day-1/claude-zadania/README.md) |
-| D | 60 min | Claude Code — pierwszy kontakt | — |
+| D | 60 min | Claude Code — pierwszy kontakt | [`day-1/claude-code/`](day-1/claude-code/README.md), zad. 6–16 (1–5: Cowork i wtyczka Chrome, praca własna) |
 | E | 60 min | Power BI / Excel z asystą AI | — |
+
+### Dzień 1 — ćwiczenia Claude Code + Excel (`day-1/claude-code-cli/`)
+
+Szczegóły, mapowanie na bloki i klucz odpowiedzi: [day-1/claude-code-cli/README.md](day-1/claude-code-cli/README.md).
+
+| # | Zadanie | Część |
+|---|---|---|
+| 1 | Instalacja i pierwsze uruchomienie | Dzień 1, cz. 1 |
+| 2 | Nawigacja po folderach w języku naturalnym | Dzień 1, cz. 1 |
+| 3 | „Otwórz ten Excel i powiedz, co w nim jest" | Dzień 1, cz. 1 |
+| 4 | Błędy na poziomie komórek — znajdź i napraw | Dzień 1, cz. 2 |
+| 5 | Operacje na komórkach w języku naturalnym | Dzień 1, cz. 2 |
+| 6 | Proces 1: z eksportu ERP do zestawienia miesięcznego | Dzień 1, cz. 3 |
+| 7 | Proces 2: powtarzalny przepis z miesięcznego do rocznego | Dzień 1, cz. 3 |
+| 8 | Kolejny miesiąc od początku do końca + raport kontrolny | Dzień 1, cz. 3/4 |
+| 9 | Gdy Claude Code się myli — obsługa błędów | Dzień 1, cz. 4 |
+| 10 | CLAUDE.md z zasadami Wydziału i własna komenda „zamknij miesiąc" | Dzień 1, cz. 4 |
+
+Dane wsadowe (`day-1/claude-code-cli/materialy/`) są fikcyjne i odtwarzalne:
+`python generuj_dane.py` nadpisuje wszystkie pliki czystą wersją i
+wypisuje klucz odpowiedzi.
 
 ## Ćwiczenia z Claude (`day-1/claude-zadania/`)
 
@@ -88,9 +112,10 @@ szczegóły współpracy pozostają lokalnie, poza repozytorium.
 
 ## Status i do zrobienia
 
-- [x] Dzień 1: prezentacje Bloków A–C, ćwiczenia z Claude, pliki wsadowe
-- [ ] Dzień 1: materiały do Bloków D (Claude Code) i E (Power BI / Excel)
-- [ ] Dzień 2: pełne rozpisanie i materiały (Claude Code + Excel)
+- [x] Dzień 1: prezentacje Bloków A–C, ćwiczenia z Claude Czat i Claude Code (Blok D), pliki wsadowe
+- [ ] Dzień 1: materiały do Bloku E (Power BI / Excel)
+- [x] Dzień 1: 10 ćwiczeń z Claude Code + fikcyjne dane wsadowe z generatorem
+- [ ] Dzień 1: prezentacja wprowadzająca do Claude Code CLI (Blok A) i sprawdzenie wymagań technicznych na laptopach uczestników (Python, Git, Claude Code)
 - [ ] Dzień 3: prezentacje (DataPOV, storytelling, PowerPoint)
 - [ ] Po szkoleniu: listy obecności, certyfikaty, protokół realizacji
 

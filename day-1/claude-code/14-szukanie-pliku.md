@@ -11,9 +11,10 @@ Claude Code, czego szukacie, i pozwolić mu znaleźć to za Was.
 
 ## Materiały
 
-- Folder testowy z zadania 13 (już posegregowany) plus 2–3 dodatkowe
-  pliki o mniej oczywistych nazwach, ukryte w podfolderach przez
-  prowadzącego.
+- Folder `test-claude-code` po zadaniu 13 (już posegregowany na
+  `Wrzesien/` i `Pazdziernik/`). W `archiwum/` czeka plik o nieoczywistej
+  nazwie `zal_3_korekta.xlsx` – to on ma być „znaleziskiem" w kroku 1
+  (klucz odpowiedzi: `../materialy/test-claude-code/README.md`).
 
 ## Kroki
 

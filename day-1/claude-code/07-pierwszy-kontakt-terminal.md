@@ -19,7 +19,10 @@ Czat.
 
 - Claude Code uruchomiony przez prowadzącego na ekranie (demo na żywo) –
   na tym etapie nie każdy musi mieć zainstalowane u siebie.
-- Pusty, testowy folder na dysku (np. `Pulpit\test-claude-code`).
+- Folder startowy `../materialy/test-claude-code/` **skopiowany na Pulpit**
+  (opis zawartości i klucz odpowiedzi: `../materialy/test-claude-code/README.md`).
+  Ten sam folder służy do wszystkich zadań 7–15 – bez resetowania między
+  nimi.
 
 ## Kroki
 

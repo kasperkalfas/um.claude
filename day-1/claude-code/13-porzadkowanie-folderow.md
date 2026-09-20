@@ -12,10 +12,10 @@ jednym poleceniem.
 
 ## Materiały
 
-- Folder testowy z 6–8 fikcyjnymi plikami „na kupie", bez podziału na
-  podfoldery – np. kopie plików z `../materialy/` z nazwami sugerującymi
-  różne miesiące (wrzesień/październik) i wydziały, przygotowane przez
-  prowadzącego.
+- Folder `test-claude-code` na Pulpicie (kopia
+  `../materialy/test-claude-code/`) – w folderze głównym leżą „na kupie"
+  4 pliki `.xlsx` z września i października (po zad. 11 z prefiksem
+  `UM_`); `archiwum/` zostawiamy bez zmian.
 
 ## Kroki
 

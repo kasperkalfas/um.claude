@@ -11,9 +11,10 @@ bez otwierania każdego z osobna w Excelu.
 
 ## Materiały
 
-- Posegregowany folder z zadań 13–14, z kilkoma plikami `.xlsx` o
-  podobnej strukturze (te same kolumny: Dział, Kwota planowana, Kwota
-  wykonana, Miesiąc).
+- Folder `test-claude-code` po zadaniach 13–14: 6 plików `.xlsx` (4 w
+  `Wrzesien/`+`Pazdziernik/`, 2 w `archiwum/`), wszystkie o tej samej
+  strukturze (Dział, Kwota planowana, Kwota wykonana, Miesiąc). Klucz
+  odpowiedzi z tabelą per miesiąc: `../materialy/test-claude-code/README.md`.
 
 ## Kroki
 

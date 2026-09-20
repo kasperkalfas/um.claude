@@ -1,0 +1,25 @@
+﻿Data księgowania;Dział;Rozdział;Paragraf;Nazwa;Kontrahent;Kwota;Nr dokumentu
+2026-10-03;600;60016;4270;Remont chodników – Zaodrze;Drogbud Opole Sp. z o.o.;1070000.00;FV/2026/10/0301
+2026-10-10;600;60016;4300;Utrzymanie sygnalizacji świetlnej;Signal-Tech S.A.;310000.00;FV/2026/10/0305
+2026-10-17;600;60004;4300;Dopłata do transportu zbiorowego;MZK Opole Sp. z o.o.;600000.00;NK/2026/10/0032
+2026-10-24;750;75023;4010;Wynagrodzenia pracowników urzędu;lista płac;985000.00;LP/2026/10
+2026-10-06;750;75023;4110;Składki na ubezpieczenia społeczne;ZUS;191000.00;DRA/2026/10
+2026-10-13;750;75023;4260;Energia elektryczna – budynek Rynek;Tauron Sprzedaż;71000.00;FV/2026/10/0310
+2026-10-20;750;75023;4210;Materiały biurowe;Papirus Hurt;13000.00;FV/2026/10/0312
+2026-10-27;750;75075;4300;Promocja miasta – targi;Agencja Kreatywna Nysa;250000.00;FV/2026/10/0318
+2026-10-09;801;80101;4010;Wynagrodzenia – szkoły podstawowe;lista płac;3120000.00;LP/2026/10/SP
+2026-10-16;801;80104;4010;Wynagrodzenia – przedszkola;lista płac;1260000.00;LP/2026/10/PP
+2026-10-23;801;80101;4260;Energia – szkoły podstawowe;Tauron Sprzedaż;500000.00;FV/2026/10/0321
+2026-10-05;801;80148;4220;Zakup żywności – stołówki;Catering Odra;460000.00;FV/2026/10/0330
+2026-10-12;851;85154;4300;Programy profilaktyczne;Fundacja Zdrowe Opole;160000.00;FV/2026/10/0340
+2026-10-19;851;85195;4210;Wyposażenie gabinetów;MedSupply Polska;80000.00;FV/2026/10/0344
+2026-10-26;852;85219;4010;Wynagrodzenia – MOPR;lista płac;1055000.00;LP/2026/10/MOPR
+2026-10-08;852;85214;3110;Zasiłki okresowe i celowe;świadczenia;490000.00;ZAS/2026/10
+2026-10-15;852;85228;4300;Usługi opiekuńcze;Spółdzielnia Socjalna Pomocna Dłoń;145000.00;FV/2026/10/0350
+2026-10-22;900;90015;4260;Oświetlenie ulic;Tauron Dystrybucja;790000.00;FV/2026/10/0360
+2026-10-04;900;90003;4300;Oczyszczanie miasta;Remondis Opole;485000.00;FV/2026/10/0363
+2026-10-11;900;90004;4300;Utrzymanie zieleni – nasadzenia jesienne;Zieleń Miejska Sp. z o.o.;140000.00;FV/2026/10/0370
+2026-10-18;921;92109;2480;Dotacja – Miejski Ośrodek Kultury;MOK Opole;370000.00;DOT/2026/10/01
+2026-10-25;921;92116;2480;Dotacja – Miejska Biblioteka Publiczna;MBP Opole;215000.00;DOT/2026/10/02
+2026-10-07;926;92601;4270;Remont hali sportowej – etap II;Budosport Sp. z o.o.;355000.00;FV/2026/10/0381
+2026-10-14;926;92605;2820;Dotacje dla klubów sportowych;kluby sportowe;125000.00;DOT/2026/10/03

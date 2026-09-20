@@ -1,0 +1,6 @@
+Notatka do zestawień miesięcznych (DANE FIKCYJNE – materiał szkoleniowy)
+
+1. Zestawienia za wrzesień i październik 2026 leżą w folderze głównym.
+2. Starsze miesiące (lipiec, sierpień) są w folderze archiwum.
+3. Plik zal_3_korekta.xlsx to korekta z lipca – tylko 5 wydziałów.
+4. Wszystkie kwoty w PLN. Kolumny: Dział, Kwota planowana, Kwota wykonana, Miesiąc.

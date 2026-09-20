@@ -15,9 +15,9 @@ plików.
 
 ## Materiały
 
-- Folder testowy z podfolderami przygotowany przez prowadzącego, np.:
-  `test-claude-code/Wrzesien/`, `test-claude-code/Pazdziernik/`, każdy z
-  1–2 fikcyjnymi plikami.
+- Folder `test-claude-code` na Pulpicie (kopia
+  `../materialy/test-claude-code/`) – w folderze głównym pliki bieżące,
+  w podfolderze `archiwum/` starsze miesiące (lipiec, sierpień).
 
 ## Kroki
 
@@ -25,7 +25,7 @@ plików.
 2. Poproście o zajrzenie głębiej: *„A jakie podfoldery są w tym
    folderze?"*
 3. Poproście o wejście w konkretny podfolder i pokazanie zawartości:
-   *„Pokaż mi, co jest w folderze Wrzesien."*
+   *„Pokaż mi, co jest w folderze archiwum."*
 4. Na koniec zapytajcie zbiorczo: *„Zrób mi krótkie zestawienie: jakie
    foldery są w test-claude-code i ile plików jest w każdym z nich."*
 
