@@ -38,3 +38,7 @@ kilka prostych słów.
   Claude Code – reszta to zwykła rozmowa po polsku, dokładnie jak dotąd.
 - `/clear` i `claude --continue` to dwie strony tego samego mechanizmu co
   w czacie: czysta karta vs. wracanie do wcześniejszej pracy.
+- Dwa polecenia warte osobnej uwagi to `/context` (ile okna kontekstu
+  jest zajęte i przez co) i `/compact` (streszczenie rozmowy, żeby
+  zwolnić miejsce) – omawiamy je w
+  [zadaniu 3 z folderu o tokenach i oknie kontekstu](../tokeny-i-okno-kontekstu/03-kontekst-w-claude-code.md).

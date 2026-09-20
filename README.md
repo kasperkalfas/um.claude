@@ -18,6 +18,7 @@ agenda/        agenda szkolenia (md + pdf)
 day-1/         Dzień 1 – prezentacje i ćwiczenia (Claude Czat, Claude Code)
   claude-zadania/      8 zadań z Claude Czat (3 na żywo w Bloku C + 5 dodatkowych)
   claude-code/         19 krótkich zadań: Cowork, wtyczka Chrome, Claude Code – pierwszy kontakt (Blok D)
+  tokeny-i-okno-kontekstu/  4 zadania: tokeny (tokenizer), okno kontekstu, /context /compact /clear, oszczędne polecenia (wstęp do Bloku D)
   claude-code-cli/     10 zadań Claude Code + Excel: Proces 1 i 2, przepis, skrypt, własna komenda (Dzień 1)
     materialy/         fikcyjne eksporty ERP, zestawienia, generator (generuj_dane.py)
   materialy/           fikcyjne pliki Excel do ćwiczeń z czatu i Bloku D
@@ -45,7 +46,7 @@ Część plików jest celowo wyłączona z repozytorium przez `.gitignore`
 | A | 30 min | AI Intro → ML & Gen AI | `day-1/day-1-ai-intro.pptx` |
 | B | 30 min | Dane jako fundament — „Data First, AI Second" | `day-1/day-1-data-first-ai-second.pptx` |
 | C | 60 min | Claude Czat w przeglądarce — interfejs i promptowanie | `day-1/day1-claude.pptx` + [`day-1/claude-zadania/`](day-1/claude-zadania/README.md) |
-| D | 60 min | Claude Code — pierwszy kontakt | [`day-1/claude-code/`](day-1/claude-code/README.md), zad. 6–16 (1–5: Cowork i wtyczka Chrome, praca własna) |
+| D | 60 min | Claude Code — pierwszy kontakt | [`day-1/claude-code/`](day-1/claude-code/README.md), zad. 6–16 (1–5: Cowork i wtyczka Chrome, praca własna); wstęp: [`day-1/tokeny-i-okno-kontekstu/`](day-1/tokeny-i-okno-kontekstu/README.md) |
 | E | 60 min | Power BI / Excel z asystą AI | — |
 
 ### Dzień 1 — ćwiczenia Claude Code + Excel (`day-1/claude-code-cli/`)
