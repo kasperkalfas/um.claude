@@ -22,6 +22,24 @@ DataPOV) – dlatego instalację i pierwszy kontakt robimy dzień wcześniej,
       — tryb zgód (pytaj / akceptuj), pytania o odbiorcę–długość–styl,
       plan do zatwierdzenia, samokontrola slajdów; część 2: prezentacja
       z pięciu punktów z Excela (Wasza treść, forma Claude).
+- [ ] **[03 – Notatki prelegenta do każdego slajdu – i co w nich sprawdzić](03-notatki-prelegenta.md)** *(10 min)*
+      — jedno polecenie → pole notatek pod każdym slajdem; kontrola
+      faktów spoza slajdów; dopasowanie czasu (45 s/slajd), głosu,
+      przejść; istniejąca prezentacja; notatki w innym języku.
+- [ ] **[04 – Nowy slajd z podanego źródła i zmiana tonu dla innego odbiorcy](04-slajd-ze-zrodla-i-zmiana-tonu.md)** *(12 min)*
+      — slajd z jawnej strony (ISAP/BIP) w stylu reszty + notatka + przypis;
+      kontrola liczb ze źródłem; „tylko slajd 1" dla młodzieży, potem dla
+      Rady; granica tonu w materiale Urzędu.
+- [ ] **[05 – Prezentacja w szablonie Urzędu – Claude ma się dopasować, nie narzucać](05-prezentacja-w-szablonie-urzedu.md)** *(12 min)*
+      — 3 slajdy w istniejącym szablonie; trzy testy: Resetuj (układy vs
+      pola na wierzchu), zmiana motywu, stałe elementy (herb, stopka,
+      numer); poprawka słowem; „odchudzony" szablon do pracy z AI.
+- [ ] **[06 – Poprawianie gotowej prezentacji słowami – tytuł z tezą, ikona, slajd bez ściany tekstu](06-poprawianie-gotowej-prezentacji.md)** *(25 min)*
+      — istniejąca prezentacja o wykonaniu budżetu (5 slajdów, dane
+      fikcyjne); tytuł = teza z liczbą (most do DataPOV); ikona + pętla
+      „zrzut → poprawka"; slajd 2: 46 liczb w akapicie → 8 kart;
+      **kontrola 16 liczb względem klucza** (zaokrąglenia, znaki,
+      zamiana kart, liczby dopisane); wnioski sprzeczne z danymi; 80/20.
 
 ## Plan kolejnych zadań (w przygotowaniu)
 
@@ -29,12 +47,26 @@ Kolejność odpowiada temu, jak Wydział buduje prezentację w Procesie 3:
 
 | # | Temat | Materiał wejściowy (fikcyjny) |
 |---|---|---|
-| 03 | Porównanie Claude / Copilot / NotebookLM na tym samym poleceniu | temat z zad. 02 |
-| 04 | Tytuły slajdów: z „opisowych" na „wnioskowe" (most do DataPOV) | prezentacja z zad. 02 |
-| 05 | Obrazy i wykresy na slajdach; burza mózgów „czego brakuje" | wykresy z `../claude-w-excelu/` zad. 4 |
-| 06 | Prezentacja z dokumentu Word / PDF | `../../agenda/Agenda_szkolenia.pdf` lub notatka fikcyjna |
-| 07 | Streszczenie istniejącej prezentacji i artefakty z niej (notatka, e-mail, plan wystąpienia) | `../../day-1/day1-claude.pptx` |
-| 08 | Przygotowanie do wystąpienia: notatki prelegenta, pytania od odbiorców, próba | prezentacja z zad. 02–05 |
+| 07 | Porównanie Claude / Copilot / NotebookLM na tym samym poleceniu | temat z zad. 02 |
+| 08 | Prezentacja z dokumentu Word / PDF – w szablonie Urzędu (przedostatni krok Procesu 3) | `../../agenda/Agenda_szkolenia.pdf` lub notatka fikcyjna |
+| 09 | Obrazy i wykresy na slajdach; burza mózgów „czego brakuje" | wykresy z `../claude-w-excelu/` zad. 4 |
+| 10 | Streszczenie istniejącej prezentacji i artefakty z niej (notatka, e-mail, plan wystąpienia) | `../../day-1/day1-claude.pptx` |
+| 11 | Przygotowanie do wystąpienia: pytania od odbiorców, próba, plan B bez rzutnika | prezentacja z zad. 02–09 |
+
+(Planowane wcześniej „Tytuły slajdów: z opisowych na wnioskowe" weszło do
+zad. 06 jako krok 2.)
+
+## Dane w `materialy/`
+
+`wykonanie_budzetu_2026_8m.pptx` (zad. 06) – celowo przeciętna
+prezentacja (domyślny szablon, ściana tekstu, tabela, wypunktowanie,
+wnioski „zgodnie z planem") o fikcyjnym wykonaniu wydatków 8 działów po
+8 miesiącach 2026 r. Liczby liczone z
+`../../day-1/claude-code-cli/materialy/zestawienie_roczne_2026.xlsx`
+(te same działy i kwoty, co w ścieżce Claude Code), prognoza roczna =
+średnia miesięczna × 12. `generuj_prezentacja.py` odtwarza plik i
+wypisuje klucz (46 liczb slajdu 2, działy nad planem 750 i 851,
+prognoza −2,9 %, przykładowy tytuł-teza).
 
 ## Wymagania techniczne (sprawdzić przed Dniem 2)
 

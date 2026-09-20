@@ -1,0 +1,27 @@
+INSTRUKCJA ZAMKNIĘCIA MIESIĄCA – WYDZIAŁ FINANSOWY
+(wersja robocza, 2019 r., dane i nazwy fikcyjne – materiał szkoleniowy)
+
+1. Po zaksięgowaniu ostatnich dokumentów miesiąca wejść do systemu FK,
+   moduł Raporty -> Wykonanie budżetu -> Eksport do Excela. Zakres: bieżący
+   miesiąc, wszystkie działy. Plik zapisać jako eksport_RRRR-MM.xls na
+   dysku wspólnym W:\Finanse\Eksporty.
+2. Otworzyć plik "Zestawienie miesięczne" (szablon z folderu Szablony),
+   zapisać jako zestawienie_RRRR_MM.xlsx.
+3. Przepisać z eksportu do zestawienia: kolumna Plan (z uchwały
+   budżetowej, nie z eksportu!), kolumna Wykonanie (z eksportu, wiersz
+   "Razem dział"), kolumna Zaangażowanie (z eksportu, ostatnia kolumna).
+   Działy w kolejności: 600, 750, 801, 851, 852, 900, 921, 926.
+4. Sprawdzić sumę: "Razem" w zestawieniu musi się zgadzać z "Razem
+   ogółem" w eksporcie. Jeśli się nie zgadza – najczęściej brakuje
+   działu 921 albo 926 (są na drugiej stronie eksportu).
+5. Wydrukować, parafować i zanieść do Skarbnika do podpisu.
+6. Po podpisie przepisać wykonanie do pliku rocznego (Zestawienie
+   roczne, arkusz Wykonanie, kolumna właściwego miesiąca).
+7. Plik roczny zapisać, wersję poprzednią przenieść do folderu Archiwum
+   z datą w nazwie.
+8. Termin: zestawienie miesięczne gotowe do 10. dnia następnego miesiąca.
+9. Uwaga: w grudniu dodatkowo kolumna "Wydatki niewygasające" – wzór od
+   Skarbnika.
+
+Osoba odpowiedzialna: gł. specjalista ds. budżetu; zastępstwo: inspektor
+ds. sprawozdawczości.

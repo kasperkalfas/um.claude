@@ -1,0 +1,9 @@
+kod;nazwa;co obejmuje (skrót);źródło danych do zestawienia;uwagi
+600;Transport i łączność;drogi gminne i powiatowe, utrzymanie zimowe, komunikacja miejska;eksport ERP;sezonowe – zima
+750;Administracja publiczna;urząd, rada, promocja;eksport ERP;stabilne
+801;Oświata i wychowanie;szkoły, przedszkola, dowóz uczniów;eksport ERP;40 % budżetu, próg odchyleń 3 %
+851;Ochrona zdrowia;ośrodki zdrowia, profilaktyka, przeciwdziałanie alkoholizmowi;mail z Wydziału Zdrowia (nie ERP);spływa 4.–5. dnia roboczego
+852;Pomoc społeczna;OPS, zasiłki, domy pomocy;eksport ERP;część to zadania zlecone
+900;Gospodarka komunalna i ochrona środowiska;odpady, oświetlenie, zieleń;eksport ERP;stabilne
+921;Kultura i ochrona dziedzictwa narodowego;biblioteki, domy kultury, zabytki;eksport ERP;w eksporcie na drugiej stronie
+926;Kultura fizyczna;boiska, baseny, kluby sportowe;eksport ERP;sezonowe – lato; w eksporcie na drugiej stronie

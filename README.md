@@ -26,6 +26,8 @@ day-1/         Dzień 1 – prezentacje i ćwiczenia (Claude Czat, Claude Code)
 day-2/         Dzień 2 – Claude w Excelu (dodatek) + ścieżka Claude Code (w day-1/claude-code-cli/)
   claude-w-excelu/     zadania z dodatkiem Claude by Anthropic w Excelu; materialy/Human_Resources.xlsx – fikcyjny zbiór kadrowy (1470 × 35)
   claude-w-powerpoincie/  zadania z dodatkiem Claude by Anthropic w PowerPoincie (instalacja w Dniu 2, użycie w Dniu 3)
+day-3/         Dzień 3 – DataPOV i prezentacje
+  gamma_prezentacja_datapov.md   outline do gamma.app: Blok A (30 min) DataPOV dla Pani Skarbnik, przykład na danych fikcyjnych
 materialy/     materiały pomocnicze (data storytelling, DataPOV) – Dzień 3
 umowa/         dokumenty umowne i wzory (lokalnie, poza repozytorium)
 CLAUDE.md      kontekst projektu dla Claude Code (lokalnie, poza repozytorium)
@@ -41,7 +43,7 @@ Część plików jest celowo wyłączona z repozytorium przez `.gitignore`
 |---|---|---|---|
 | 1 | 22.09.2026 | Podstawy AI, dane jako fundament, Claude Czat, pierwszy kontakt z Claude Code, Power BI / Excel | `day-1/` — gotowe |
 | 2 | 23.09.2026 | Praca na komórkach Excela i automatyzacja z Claude Code (CLI) | `day-1/claude-code-cli/` — ćwiczenia i dane gotowe; [`day-2/claude-w-excelu/`](day-2/claude-w-excelu/README.md) — dodatek Claude w Excelu, [`day-2/claude-w-powerpoincie/`](day-2/claude-w-powerpoincie/README.md) — dodatek Claude w PowerPoincie (w budowie); prezentacja do przygotowania |
-| 3 | 25.09.2026 | DataPOV, prezentacje danych z Claude, wizualizacja w PowerPoint, mapowanie procesów | `materialy/` — kontekst gotowy, prezentacje do przygotowania |
+| 3 | 25.09.2026 | DataPOV, prezentacje danych z Claude, wizualizacja w PowerPoint, mapowanie procesów | [`day-3/gamma_prezentacja_datapov.md`](day-3/gamma_prezentacja_datapov.md) — outline Bloku A (DataPOV) do gamma.app; `materialy/` — kontekst; Bloki B–E do przygotowania |
 
 ### Dzień 1 — zawartość
 
@@ -121,7 +123,8 @@ szczegóły współpracy pozostają lokalnie, poza repozytorium.
 - [ ] Dzień 1: materiały do Bloku E (Power BI / Excel)
 - [x] Dzień 1: 10 ćwiczeń z Claude Code + fikcyjne dane wsadowe z generatorem
 - [ ] Dzień 1: prezentacja wprowadzająca do Claude Code CLI (Blok A) i sprawdzenie wymagań technicznych na laptopach uczestników (Python, Git, Claude Code)
-- [ ] Dzień 3: prezentacje (DataPOV, storytelling, PowerPoint)
+- [x] Dzień 3: outline prezentacji Bloku A (DataPOV) do gamma.app
+- [ ] Dzień 3: prezentacje Bloków B–E (tworzenie prezentacji z Claude, wizualizacja, mapowanie procesów)
 - [ ] Po szkoleniu: listy obecności, certyfikaty, protokół realizacji
 
 ## Konwencje

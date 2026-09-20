@@ -1,0 +1,34 @@
+Od: Skarbnik
+Do: Zespół budżetu
+Temat: RE: terminy i zasady od stycznia 2026 – proszę zachować
+Data: 2026-01-08
+(dane fikcyjne – materiał szkoleniowy)
+
+Dzień dobry,
+
+porządkuję to, co ustalaliśmy ustnie, bo znowu wypłynęło przy audycie.
+Od stycznia 2026 obowiązuje:
+
+1. Eksport z ERP robimy 3. dnia roboczego miesiąca (nie "po ostatnim
+   księgowaniu" – księgowania spływają do 2. dnia roboczego).
+2. Zestawienie miesięczne ma być gotowe do 7. DNIA ROBOCZEGO, nie do 10.
+   kalendarzowego jak w starej instrukcji. Bank dostaje prognozę do 15.
+3. Dział 851 (Ochrona zdrowia) NIE bierzemy z eksportu ERP – dane
+   przychodzą mailem z Wydziału Zdrowia (zestawienie z ośrodków), zwykle
+   4.–5. dnia roboczego. Jeśli nie ma – wpisujemy wykonanie z poprzedniego
+   miesiąca i zaznaczamy komórkę na żółto, uzupełniamy po otrzymaniu.
+4. Odchylenie prognozy od planu powyżej 5 % w którymkolwiek dziale
+   wymaga jednozdaniowego wyjaśnienia w kolumnie Uwagi w pliku rocznym,
+   zanim cokolwiek pójdzie do banku. Dla oświaty (801) próg to 3 %, bo to
+   40 % budżetu.
+5. Nie drukujemy zestawienia miesięcznego. Podpis to mój komentarz
+   "OK – Skarbnik" w pliku na dysku wspólnym. Wydruk tylko rocznego, na
+   koniec roku.
+6. Plik roczny: nie przenosimy poprzedniej wersji do Archiwum ręcznie –
+   dysk wspólny ma historię wersji. Ale nazwa pliku ma zostać ta sama
+   cały rok (zestawienie_roczne_2026.xlsx), bo bank ma do niej link.
+
+Proszę to gdzieś zapisać, żeby nowa osoba nie musiała pytać.
+
+Pozdrawiam
+Skarbnik
