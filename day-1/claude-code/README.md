@@ -33,9 +33,11 @@ Każde zadanie = krótki wstęp + kroki z gotowymi poleceniami w ramkach
 - [ ] **[06 – Instalacja Claude Code CLI](06-instalacja-claude-code-cli.md)**
       *(ok. 5 min)* — do zrobienia wcześniej, samodzielnie albo z pomocą
       IT Urzędu, żeby nie zajmować tym czasu w trakcie bloku.
-- [ ] **Folder startowy** — skopiować `../materialy/test-claude-code/` na
-      Pulpit (jeden folder do wszystkich zadań 7–15, bez resetowania;
-      zawartość i klucz odpowiedzi: [`../materialy/test-claude-code/README.md`](../materialy/test-claude-code/README.md)).
+- [ ] **Folder startowy** — skopiować **całe** `../claude-code-cli/materialy/`
+      do `C:\Szkolenie\dzien-1\praca\` (to samo jedno miejsce, z którego
+      korzysta ścieżka Excel/procesy). Zadania 7–15 idą w podfolderze
+      `test-claude-code/` – jeden folder, bez resetowania; zawartość i klucz
+      odpowiedzi: [`../claude-code-cli/materialy/test-claude-code/README.md`](../claude-code-cli/materialy/test-claude-code/README.md).
 
 ### Część A: Czym różni się Claude Code od czatu — demo na żywo (~31 min)
 

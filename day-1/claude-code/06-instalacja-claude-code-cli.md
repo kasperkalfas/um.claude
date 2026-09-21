@@ -42,10 +42,11 @@ Excel, PowerPoint oraz automatyzacja zadań" (Urząd Miejski w Opolu, Dzień 1,
    Powinien pojawić się numer wersji, np. `2.1.211 (Claude Code)`.
 
 4. **Przejdź do folderu testowego i uruchom.** Folder `test-claude-code`
-   skopiowany na Pulpit (patrz README):
+   jest w skopiowanych materiałach `C:\Szkolenie\dzien-1\praca\` (patrz
+   README):
 
    ```powershell
-   cd $HOME\Desktop\test-claude-code
+   cd C:\Szkolenie\dzien-1\praca\test-claude-code
    claude
    ```
 

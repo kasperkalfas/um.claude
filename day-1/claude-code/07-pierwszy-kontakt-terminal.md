@@ -11,9 +11,9 @@ z Claude Czat – tylko okno wygląda inaczej.
 
 ## Materiały
 
-- Claude Code uruchomiony w folderze `test-claude-code` na Pulpicie
-  (kopia `../materialy/test-claude-code/`; klucz odpowiedzi w README
-  tego folderu). Ten sam folder służy do zadań 7–15, bez resetowania.
+- Claude Code uruchomiony w `C:\Szkolenie\dzien-1\praca\test-claude-code`
+  (podfolder skopiowanych materiałów `../claude-code-cli/materialy/`; klucz
+  odpowiedzi w README tego folderu). Ten sam folder służy do zadań 7–15, bez resetowania.
 - Na tym etapie wystarczy ekran prowadzącego – nie każdy musi mieć
   zainstalowane u siebie.
 
@@ -28,7 +28,7 @@ z Claude Czat – tylko okno wygląda inaczej.
    ```
 
 3. **Sprawdź:** odpowiedź to zwykłe zdanie, ale zawiera **realną ścieżkę**
-   na dysku (`...\Desktop\test-claude-code`).
+   na dysku (`...\praca\test-claude-code`).
 4. Drugie pytanie, czysto konwersacyjne:
 
    ```

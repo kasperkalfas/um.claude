@@ -11,7 +11,10 @@ zadania odwzorowują realne procesy Wydziału na **fikcyjnych danych**:
 > przepis, skrypt, raport kontrolny, własna komenda. Zadania 1–3 tutaj
 > celowo powtarzają podstawy z pierwszego kontaktu – jako samodzielna
 > rozgrzewka na laptopach uczestników. Folder jest samodzielny (zadania +
-> `materialy/` + generator) – kopiuje się w całości na pendrive.
+> `materialy/` + generator) – kopiuje się w całości na pendrive. **Materiały
+> do obu zestawów są w jednym miejscu:** `materialy/test-claude-code/` to
+> folder startowy zadań 7–15 z `../claude-code/`, więc na laptopy kopiuje
+> się jeden folder (`materialy/` → `C:\Szkolenie\dzien-1\praca\`).
 
 - **Proces 1:** eksport z ERP → zestawienie miesięczne (Plik 1),
 - **Proces 2:** zestawienie miesięczne → zestawienie roczne z prognozą dla
@@ -57,7 +60,7 @@ zgody Urzędu/PNT na pracę z danymi w Claude oraz ustaleń z IT.
 | Git for Windows | Claude Code korzysta z Git Bash | [git-scm.com](https://git-scm.com/download/win) |
 | Python 3 + `pip install openpyxl pandas` | czytanie/zapis Excela i CSV | [python.org](https://www.python.org/downloads/) („Add Python to PATH") |
 | Excel | weryfikacja wyników | Urząd |
-| Kopia `claude-code-cli/materialy/` na pendrive | świeże pliki po każdym ćwiczeniu | prowadzący |
+| Kopia `claude-code-cli/materialy/` na pendrive | jedno miejsce z materiałami do obu zestawów Claude Code; świeże pliki po każdym ćwiczeniu | prowadzący |
 
 Bez Pythona z openpyxl zadania 3–10 nie zadziałają – to najczęstsza
 przyczyna problemów, warto sprawdzić dzień wcześniej (`python --version`,
@@ -102,9 +105,11 @@ wcześniejszy pierwszy kontakt „kupuje" czas w części 1.
 
 Generowane skryptem `generuj_dane.py` – uruchomienie nadpisuje wszystkie
 pliki czystą wersją (przydatne po każdej grupie / po nieudanym ćwiczeniu).
+Wyjątek: `test-claude-code/` jest statyczny (generator go nie rusza).
 
 | Plik | Co udaje | Zawartość | Zadania |
 |---|---|---|---|
+| `test-claude-code/` | folder startowy pierwszego kontaktu | 6 plików `.xlsx` (w tym `archiwum/`) + notatka; nie jest generowany – klucz w [`materialy/test-claude-code/README.md`](materialy/test-claude-code/README.md) | `../claude-code/` zad. 7–15 |
 | `01_sandbox/` | zabałaganiony folder „Zestawienia" | 17 plików: 2025/2026, duplikaty, 3 wersje notatki, TODO, eksport | 2 |
 | `eksport_erp_2026-09.csv` | brudny eksport z ERP | 25 wierszy; 2 formaty dat, 4 formaty kwot, duplikat `FV/2026/09/0142`, brak paragrafu w `FV/2026/09/0210`, spacje w nazwach | 3, 6, 9 |
 | `eksport_erp_2026-10.csv` | czysty eksport z ERP | 24 wiersze, bez pułapek | 8, 10 |

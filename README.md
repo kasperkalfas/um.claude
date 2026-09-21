@@ -71,8 +71,8 @@ generator, `python <skrypt>.py` odtwarza czyste pliki i wypisuje klucz odpowiedz
 
 | Folder | Pliki | Generator |
 |---|---|---|
-| `day-1/materialy/` | 3 zestawienia miesięczne (jedno z 3 celowymi błędami, jedno z 10 wydziałami) + `test-claude-code/` | — |
-| `day-1/claude-code-cli/materialy/` | eksporty ERP (CSV), szablon miesięczny, plik roczny 2026, plik z błędami | `generuj_dane.py` |
+| `day-1/materialy/` | 3 zestawienia miesięczne (jedno z 3 celowymi błędami, jedno z 10 wydziałami) | — |
+| `day-1/claude-code-cli/materialy/` | jedno miejsce dla obu zestawów Claude Code: eksporty ERP (CSV), szablon miesięczny, plik roczny 2026, plik z błędami, `01_sandbox/` + `test-claude-code/` (folder startowy zad. 7–15 z `claude-code/`) | `generuj_dane.py` (bez `test-claude-code/`) |
 | `day-1/tokeny-i-okno-kontekstu/materialy/` | wykonanie miesięczne 2023–2025, kalendarz 2026 | `generuj_prognoza.py` |
 | `day-2/claude-w-excelu/materialy/` | `Human_Resources.xlsx` (1 470 × 35, kadrowy), założenia termomodernizacji | `generuj_termomodernizacja.py` |
 | `day-2/claude-w-powerpoincie/materialy/` | `wykonanie_budzetu_2026_8m.pptx` (prezentacja do poprawy) | `generuj_prezentacja.py` |

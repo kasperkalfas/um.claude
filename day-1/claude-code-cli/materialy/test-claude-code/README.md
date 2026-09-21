@@ -7,10 +7,13 @@ z Bloku B).
 
 ## Przygotowanie (przed Blokiem D)
 
-Skopiuj **cały folder** `test-claude-code/` na Pulpit każdego komputera
-(albo tylko na komputer prowadzącego, jeśli blok idzie jako demo). Claude
-Code uruchamiacie **w tej kopii**, nie w repozytorium. Żeby zresetować
-stan po ćwiczeniach — po prostu skopiuj folder jeszcze raz.
+Folder jest częścią `claude-code-cli/materialy/` – jednego zestawu
+materiałów Claude Code, który w całości kopiuje się do
+`C:\Szkolenie\dzien-1\praca\` (zadanie 1 z `claude-code-cli/`). Zadania 7–15
+uruchamiacie w `C:\Szkolenie\dzien-1\praca\test-claude-code` (na każdym
+komputerze albo tylko u prowadzącego, jeśli blok idzie jako demo) – **w
+kopii**, nie w repozytorium. Żeby zresetować stan po ćwiczeniach — skopiuj
+podfolder z pendrive'a jeszcze raz.
 
 ## Zawartość
 
@@ -28,7 +31,7 @@ Wszystkie pliki `.xlsx` mają te same kolumny: **Dział, Kwota planowana,
 Kwota wykonana, Miesiąc** — dzięki temu zad. 15 (zestawienie z wielu
 plików) działa bez czyszczenia danych. Żaden plik nie jest celowo
 zepsuty (zepsuty `zestawienie_miesieczne_PRZYKLAD.xlsx` zostaje w
-`../` tylko do zad. 3 z Bloku C).
+`day-1/materialy/` tylko do zad. 3 z Bloku C).
 
 ## Jak folder zmienia się w trakcie zadań
 

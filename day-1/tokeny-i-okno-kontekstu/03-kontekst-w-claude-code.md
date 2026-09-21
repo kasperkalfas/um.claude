@@ -9,8 +9,8 @@ które nim sterują: `/context`, `/compact`, `/clear`.
 **Poziom:** podstawowy
 **Czas:** ok. 7 minut
 **Wymaga:** Claude Code ([instalacja](../claude-code/06-instalacja-claude-code-cli.md))
-uruchomiony w folderze `test-claude-code` na Pulpicie (kopia
-`../materialy/test-claude-code/`).
+uruchomiony w `C:\Szkolenie\dzien-1\praca\test-claude-code` (podfolder
+skopiowanych materiałów `../claude-code-cli/materialy/`).
 
 ## Trzy polecenia
 

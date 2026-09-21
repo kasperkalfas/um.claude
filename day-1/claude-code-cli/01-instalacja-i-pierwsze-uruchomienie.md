@@ -83,8 +83,8 @@ Części 2.
    **Yes / Yes, and don't ask again / No**. Przeczytaj i wybierz **Yes**
    (strzałki + Enter). Na szkoleniu nie używamy „don't ask again".
 
-   **Sprawdź:** odpowiedź wymienia `01_sandbox/`, dwa eksporty CSV i trzy
-   pliki `.xlsx`.
+   **Sprawdź:** odpowiedź wymienia `01_sandbox/`, `test-claude-code/`, dwa
+   eksporty CSV i trzy pliki `.xlsx`.
 
 10. Trzy komendy do zapamiętania:
 
