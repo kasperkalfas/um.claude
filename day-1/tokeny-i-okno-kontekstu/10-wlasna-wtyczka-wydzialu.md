@@ -2,65 +2,81 @@
 
 Ćwiczenie do szkolenia „Wykorzystanie systemu AI Claude we współpracy z
 Excel, PowerPoint oraz automatyzacja zadań" (Urząd Miejski w Opolu, Dzień 1,
-**praca własna po szkoleniu** albo demo prowadzącego; domknięcie zadań
-6–9 i most do `/zamknij-miesiac` z Claude Code w Dniu 2).
+**praca własna po szkoleniu** albo demo prowadzącego; domknięcie zadań 6–9
+i most do `/zamknij-miesiac` z Claude Code w Dniu 2).
 
-**Cel:** zamiast korzystać z cudzej wtyczki, opisać Cowork **własny
-proces** – kim jesteście, na jakich danych pracujecie, jakie macie zasady
-– i poprosić, żeby złożył z tego wtyczkę z dwiema komendami:
-`/analiza-odchylen` (plan vs wykonanie) i `/zestawienie-dla-banku`
-(Proces 2). Potem uruchomić obie i zamienić wynik w prezentację.
+**Cel:** opisać Cowork własny proces po polsku i dostać z tego wtyczkę
+z dwiema komendami: `/analiza-odchylen` (plan vs wykonanie) i
+`/zestawienie-dla-banku` (Proces 2). Potem uruchomić obie i zrobić z wyniku
+prezentację.
 **Poziom:** średniozaawansowany (praktyka w Cowork)
-**Czas:** ok. 40 minut (tworzenie wtyczki ~10, uruchomienie komend ~20,
+**Czas:** ok. 40 minut (opis i budowa wtyczki ~10, dwie komendy ~20,
 prezentacja ~10)
-**Wymaga:** Cowork, konto w planie Team Urzędu, pliki fikcyjne z repo
-(niżej).
+**Wymaga:** Cowork, konto w planie Team Urzędu, dwa pliki fikcyjne (niżej).
 
-## Problem, który to rozwiązuje
+## Co powstanie
+
+Po 40 minutach macie na dysku:
+
+1. wtyczkę `wydzial-finansowy` widoczną w Cowork (Customize → Plugins),
+2. plik `..._odchylenia.xlsx` – wynik `/analiza-odchylen`,
+3. uzupełnione zestawienie roczne z formułami w arkuszu `Prognoza` –
+   wynik `/zestawienie-dla-banku`,
+4. prezentację `.pptx` z obu analiz.
+
+## Po co to robić
 
 Gotowa wtyczka finansowa z katalogu (zadanie 6) zna „finanse w ogóle":
-rachunek zysków i strat, bilans, cash flow. Wy nie robicie bilansu –
-robicie **wykonanie budżetu wg działów klasyfikacji budżetowej, plan vs
-wykonanie, prognozę dla banku**. Zamiast tłumaczyć to agentowi w każdej
-rozmowie, opisujecie raz – jako wtyczkę. Od tej pory `/analiza-odchylen`
-znaczy dokładnie to, co u Was znaczy „analiza odchyleń".
+bilans, rachunek wyników, cash flow. Wy tego nie robicie. Robicie
+**wykonanie budżetu wg działów, plan vs wykonanie, prognozę dla banku**.
+Zamiast tłumaczyć to agentowi w każdej rozmowie, opisujecie raz – jako
+wtyczkę. Od tej pory `/analiza-odchylen` znaczy dokładnie to, co u Was
+znaczy „analiza odchyleń".
 
-## Materiały
+## Przygotowanie (3 minuty)
 
-Folder roboczy `Pulpit\wtyczka-wydzialu\` z **kopiami** plików
-fikcyjnych:
+- [ ] Folder `Pulpit\wtyczka-wydzialu\` z **kopiami** dwóch plików:
 
-| Plik | Skąd | Do czego |
+| Plik | Skopiuj z | Do czego |
 |---|---|---|
-| `zestawienie_miesieczne_PODSUMOWANIE.xlsx` | `../materialy/` | 10 wydziałów, plan/wykonanie za październik; 7 wydziałów przekracza plan → `/analiza-odchylen` |
-| `zestawienie_roczne_2026.xlsx` | `../claude-code-cli/materialy/` | arkusz `Wykonanie` (plan roczny, I–VIII) i pusty arkusz `Prognoza` → `/zestawienie-dla-banku` |
+| `zestawienie_miesieczne_PODSUMOWANIE.xlsx` | `../materialy/` | 10 wydziałów, plan i wykonanie za październik → komenda 1 |
+| `zestawienie_roczne_2026.xlsx` | `../claude-code-cli/materialy/` | arkusz `Wykonanie` (plan roczny, I–VIII) i pusty arkusz `Prognoza` → komenda 2 |
 
-Plus **opis wtyczki** (niżej) – skopiujcie go do Notatnika i uzupełnijcie
-pola w nawiasach kwadratowych `[...]`. Co zostawicie w nawiasach, o to
-agent dopyta w trakcie; co wpiszecie na sztywno, przyjmie bez pytania.
+- [ ] Cowork → **Customize**: wyłączcie inne wtyczki finansowe i skill
+      prognozowania z zadania 9, żeby się nie „wtrącały".
+- [ ] Otwórzcie Notatnik – za chwilę wkleicie tam szablon opisu.
 
-## Opis wtyczki – szablon do wklejenia
+## Krok 1: Opisz swój proces (5 min)
+
+Skopiujcie szablon poniżej do Notatnika i **uzupełnijcie pola w nawiasach
+kwadratowych** `[...]`. Zasada:
+
+- co **wpiszecie** – agent przyjmie bez pytania,
+- co **zostawicie w nawiasie** – agent o to dopyta.
+
+Pola do uzupełnienia: Wasza rola, odbiorcy raportów, próg odchylenia w %
+(proponujemy 10), odbiorca zestawienia (bank).
 
 ```
-Chcę, żebyś zbudował dla mnie własną wtyczkę Cowork dopasowaną do moich
-obowiązków. Nazwa wtyczki: wydzial-finansowy.
+Zbuduj dla mnie własną wtyczkę Cowork dopasowaną do moich obowiązków.
+Nazwa wtyczki: wydzial-finansowy.
 
 MÓJ PROFIL
 - Rola: [Skarbnik / główny księgowy / inspektor ds. budżetu]
-- Organizacja: urząd miejski (jednostka samorządu terytorialnego), Polska
+- Organizacja: urząd miejski (samorząd), Polska
 - Rok budżetowy: kalendarzowy (styczeń–grudzień)
-- Waluta raportowania: PLN, kwoty z separatorem tysięcy, bez groszy
+- Kwoty: PLN, separator tysięcy, bez groszy; procenty z 1 miejscem
 - Narzędzie pracy: Excel; wynik zawsze jako plik .xlsx
-- Odbiorcy raportów: [Skarbnik / Rada Miasta / bank kredytujący / mieszkańcy]
+- Odbiorcy raportów: [Skarbnik / Rada Miasta / bank / mieszkańcy]
 
-STRUKTURA DANYCH
-- Wydatki grupujemy wg działów klasyfikacji budżetowej, np.: 600 Transport
+MOJE DANE
+- Wydatki grupujemy wg działów klasyfikacji budżetowej: 600 Transport
   i łączność, 750 Administracja publiczna, 801 Oświata i wychowanie,
   851 Ochrona zdrowia, 852 Pomoc społeczna, 900 Gospodarka komunalna
   i ochrona środowiska, 921 Kultura i ochrona dziedzictwa narodowego,
   926 Kultura fizyczna.
-- Zestawienie miesięczne: kolumny Dział | Kwota planowana | Kwota wykonana
-  | Miesiąc.
+- Zestawienie miesięczne: kolumny Dział | Kwota planowana |
+  Kwota wykonana | Miesiąc.
 - Zestawienie roczne: arkusz "Wykonanie" (Dział, Nazwa działu, Plan
   roczny, miesiące I–XII, Razem, % planu) i arkusz "Prognoza" (Plan
   roczny, Wykonanie narastająco, Średnia miesięczna, Prognoza roczna,
@@ -68,121 +84,132 @@ STRUKTURA DANYCH
 
 KOMENDA 1: /analiza-odchylen
 Cel: porównać wykonanie z planem w zestawieniu miesięcznym.
-Kroki:
-1. Wczytaj wskazany plik miesięczny; sprawdź puste wiersze, niespójne
-   formaty miesiąca, scalone komórki – zgłoś je, nie poprawiaj po cichu.
+1. Wczytaj wskazany plik miesięczny. Puste wiersze, niespójne formaty
+   miesiąca, scalone komórki – zgłoś, nie poprawiaj po cichu.
 2. Policz odchylenie w PLN i w % dla każdego działu.
 3. Oznacz działy z odchyleniem powyżej [10]% (na plus i na minus).
-4. Wypisz 5 największych odchyleń z krótkim, rzeczowym komentarzem
-   (bez zgadywania przyczyn – jeśli nie wynikają z danych, napisz
-   "do wyjaśnienia z wydziałem").
+4. Wypisz 5 największych odchyleń z krótkim komentarzem. Nie zgaduj
+   przyczyn – jeśli nie wynikają z danych, napisz "do wyjaśnienia
+   z wydziałem".
 5. Zapisz nowy plik <nazwa>_odchylenia.xlsx z arkuszami: Odchylenia,
    Top5, Dane_do_wykresu (wykres wodospadowy plan → wykonanie).
    Nigdy nie nadpisuj pliku źródłowego.
 
 KOMENDA 2: /zestawienie-dla-banku
 Cel: uzupełnić zestawienie roczne i prognozę (nasz "Proces 2").
-Kroki:
-1. Wczytaj zestawienie roczne i wskazany plik miesięczny; dopasuj wiersze
-   po kodzie działu (kolumna A), nigdy po nazwie.
+1. Wczytaj zestawienie roczne i wskazany plik miesięczny. Dopasuj
+   wiersze po KODZIE działu (kolumna A), nigdy po nazwie. Jeśli plik
+   miesięczny nie ma kodów – zapytaj mnie o mapowanie, nie zgaduj.
 2. Wpisz kwoty wykonane do właściwej kolumny miesiąca.
-3. W arkuszu "Prognoza" wpisz FORMUŁY (nie wartości): wykonanie
+3. W arkuszu "Prognoza" wpisz FORMUŁY, nie liczby: wykonanie
    narastająco, średnia miesięczna, prognoza roczna = średnia × 12,
    odchylenie od planu.
 4. Zaznacz działy, w których prognoza przekracza plan roczny.
-5. Zapisz jako <nazwa>_<rok>_<miesiąc>.xlsx; przelicz formuły i sprawdź,
-   że nie ma błędów (#ARG!, #ADR!).
+5. Zapisz jako <nazwa>_<rok>_<miesiąc>.xlsx. Przelicz formuły
+   i sprawdź, że nie ma błędów (#ARG!, #ADR!).
 6. Napisz 5-punktowe podsumowanie po polsku dla odbiorcy: [bank].
 
-SKILL: zasady-wydzialu (wiedza wspólna dla obu komend)
-- Wszystkie dane w ćwiczeniach są fikcyjne; nie proś o dane realne.
+SKILL: zasady-wydzialu (wspólne dla obu komend)
+- Dane w ćwiczeniach są fikcyjne; nie proś o dane realne.
 - Kopia przed każdą zmianą pliku (podfolder kopie/).
-- Kwoty: PLN, separator tysięcy, bez groszy; procenty z 1 miejscem.
 - Odchylenie = wykonanie − plan; dodatnie = przekroczenie planu.
-- Formuły zamiast wpisanych wartości wszędzie, gdzie to możliwe.
+- Formuły zamiast wpisanych wartości wszędzie, gdzie się da.
 - Ton komentarzy: rzeczowy, urzędowy, bez ocen personalnych.
 
-KONEKTORY MCP: żadnych. Pracujemy wyłącznie na plikach w bieżącym
-folderze.
+KONEKTORY MCP: żadnych. Pracujemy tylko na plikach w bieżącym folderze.
 
-Złóż tę wtyczkę i przed zapisaniem pokaż mi jej pełną strukturę
-(skille, komendy, agenci, konektory) do przejrzenia.
+Przed zapisaniem pokaż mi pełną strukturę wtyczki (skille, komendy,
+agenci, konektory) do przejrzenia.
 ```
 
-## Kroki
+## Krok 2: Zbuduj wtyczkę (5 min)
 
-1. **Porządek przed startem.** Cowork → **Customize**: sprawdźcie, że nie
-   macie włączonej innej wtyczki finansowej ani skilli, które mogłyby się
-   „wtrącić" (np. skill prognozowania z zadania 9 – wyłączcie na czas
-   ćwiczenia).
-2. **Folder i polecenie.** Nowe zadanie → *Choose a different folder* →
-   `Pulpit\wtyczka-wydzialu` → **Allow**. Wklejcie uzupełniony opis
-   wtyczki i uruchomcie. Agent najpierw **dopyta o pola w nawiasach**
-   (rola, próg %, odbiorca) – odpowiadajcie krótko. Potem po prawej
-   zobaczycie, że sięga po wbudowany skill tworzenia wtyczek, czyta
-   Wasz Excel, składa pakiet i przedstawia strukturę do przeglądu.
-3. **Przegląd struktury.** Zanim klikniecie *Save*: czy są dokładnie dwie
-   komendy o Waszych nazwach? jeden skill `zasady-wydzialu`? zero
-   konektorów? Otwórzcie podgląd komendy `/analiza-odchylen` – kroki
-   powinny być Waszymi krokami, przepisanymi po angielsku lub po polsku.
-   Jeśli agent coś „dodał od siebie" (np. bilans) – każcie usunąć.
-   Kliknijcie **Save** i (opcjonalnie) **Download** – plik
-   `wydzial-finansowy.plugin` ląduje w folderze; w **Customize →
-   Plugins** wtyczka powinna być już widoczna z dwiema komendami.
-4. **Test komendy 1.** Nowe zadanie w tym samym folderze → `/` →
-   `wydzial-finansowy` → `/analiza-odchylen` → na pytanie o plik:
-   `zestawienie_miesieczne_PODSUMOWANIE.xlsx`. Obserwujcie podzadania
-   (wczytaj → policz → oznacz > 10% → top 5 → zapisz). **Sprawdzian:**
-   plik ma 10 wydziałów, **7 przekracza plan** – tyle powinno być
-   oznaczonych na plus. Otwórzcie `_odchylenia.xlsx` i porównajcie
-   jedno odchylenie z własnym wyliczeniem.
-5. **Test komendy 2.** `/zestawienie-dla-banku` → plik roczny
-   `zestawienie_roczne_2026.xlsx` + miesięczny z kroku 4 jako nowy miesiąc.
-   **Sprawdzian:** w arkuszu `Prognoza` kliknijcie komórkę „Prognoza
-   roczna" – ma być **formuła**, nie liczba; kody działów 600–926
-   dopasowane po kolumnie A (zestawienie miesięczne używa nazw
-   wydziałów – agent powinien **zapytać o mapowanie**, a nie zgadywać;
-   jeśli zgadł – to błąd do zapisania w notatkach).
-6. **Prezentacja.** W tej samej rozmowie: *„Podsumuj analizę odchyleń
-   i zestawienie dla banku w prezentacji PowerPoint dla [odbiorca]:
-   7 slajdów – tytuł, streszczenie, plan vs wykonanie, top 5 odchyleń
-   z wykresem wodospadowym, prognoza roczna, działy zagrożone
-   przekroczeniem planu, następne kroki."* Skill PowerPoint zrobi
-   projekt → plik → kontrolę wizualną → poprawki. Odbiór jak w zadaniu
-   8: min. 2 liczby sprawdzone z arkuszem.
+**Zrób:** Cowork → nowe zadanie → *Choose a different folder* →
+`Pulpit\wtyczka-wydzialu` → **Allow**. Wklejcie uzupełniony szablon
+i wyślijcie. Agent dopyta o pola, które zostały w nawiasach – odpowiadajcie
+krótko. Potem sam sięgnie po wbudowany skill tworzenia wtyczek, zajrzy do
+Waszych plików Excel i pokaże strukturę do przeglądu.
 
-## Na co zwrócić uwagę
+**Sprawdź, zanim klikniecie Save:**
 
-- **Wtyczka to Wasz proces spisany po ludzku.** Nie pisaliście kodu –
-  opisaliście, co robicie krok po kroku, i jakie macie zasady. To samo,
-  co `CLAUDE.md` + własna komenda w Claude Code (Dzień 2), tylko w
-  Cowork i w jednym pakiecie do udostępnienia.
-- **Nawiasy `[...]` = pytania, sztywne wpisy = decyzje.** Jeśli wtyczka
-  ma być tylko dla Was, wpiszcie wszystko na sztywno – agent nie będzie
-  pytał. Jeśli dla całego zespołu – zostawcie nawiasy tam, gdzie ludzie
-  się różnią (rola, odbiorca).
-- **„Nie poprawiaj po cichu" i „zapytaj o mapowanie" to celowe zasady.**
-  Sprawdzają, czy agent trzyma się Waszych reguł, a nie „ulepsza".
+- [ ] dokładnie **dwie komendy**: `/analiza-odchylen`, `/zestawienie-dla-banku`
+- [ ] **jeden skill** `zasady-wydzialu`
+- [ ] **zero konektorów**
+- [ ] w podglądzie komendy 1 są **Wasze kroki** – jeśli agent dodał coś od
+      siebie (np. bilans), każcie usunąć
+
+**Zrób:** kliknijcie **Save**. Wtyczka pojawia się w **Customize → Plugins**
+z dwiema komendami. Opcjonalnie **Download** – plik
+`wydzial-finansowy.plugin` przyda się w zadaniu 11.
+
+## Krok 3: Uruchom `/analiza-odchylen` (10 min)
+
+**Zrób:** nowe zadanie w tym samym folderze → wpiszcie `/` → wybierzcie
+`wydzial-finansowy` → `/analiza-odchylen`. Na pytanie o plik:
+`zestawienie_miesieczne_PODSUMOWANIE.xlsx`. Patrzcie na podzadania po
+prawej: wczytaj → policz → oznacz → top 5 → zapisz.
+
+**Sprawdź:**
+
+- [ ] oznaczonych na plus jest **7 wydziałów z 10** (klucz)
+- [ ] otwórzcie `..._odchylenia.xlsx` i przeliczcie **jedno** odchylenie
+      ręcznie (wykonanie − plan) – zgadza się?
+- [ ] plik źródłowy **nie został zmieniony**
+
+## Krok 4: Uruchom `/zestawienie-dla-banku` (10 min)
+
+**Zrób:** `/zestawienie-dla-banku` → plik roczny
+`zestawienie_roczne_2026.xlsx`, plik miesięczny z kroku 3 jako nowy miesiąc.
+
+**Sprawdź:**
+
+- [ ] plik miesięczny ma **nazwy** wydziałów, roczny ma **kody** działów –
+      agent powinien **zapytać Was o mapowanie**. Jeśli zgadł sam, to
+      błąd – zapiszcie w notatkach
+- [ ] arkusz `Prognoza`, komórka „Prognoza roczna" – po kliknięciu widać
+      **formułę**, nie liczbę
+- [ ] brak `#ARG!` / `#ADR!` w całym arkuszu
+- [ ] podsumowanie ma 5 punktów i jest napisane do banku, nie do Was
+
+## Krok 5: Prezentacja (10 min)
+
+**Zrób:** w tej samej rozmowie wklejcie:
+
+> Podsumuj analizę odchyleń i zestawienie dla banku w prezentacji
+> PowerPoint dla [odbiorca]. 7 slajdów: tytuł, streszczenie, plan vs
+> wykonanie, top 5 odchyleń z wykresem wodospadowym, prognoza roczna,
+> działy zagrożone przekroczeniem planu, następne kroki.
+
+Skill PowerPoint zrobi projekt → plik → kontrolę wizualną → poprawki.
+
+**Sprawdź** (jak w zadaniu 8):
+
+- [ ] **min. 2 liczby** ze slajdów porównane z arkuszem
+- [ ] liczba działów „zagrożonych" na slajdzie = liczba zaznaczonych
+      w arkuszu `Prognoza`
+
+## Co zapamiętać
+
+- **Wtyczka to Wasz proces spisany po ludzku.** Nie pisaliście kodu.
+  W Dniu 2 zrobicie to samo w Claude Code (`CLAUDE.md` + własna komenda)
+  – tylko w innym opakowaniu.
+- **Nawias = pytanie, wpis na sztywno = decyzja.** Wtyczka tylko dla Was?
+  Wpiszcie wszystko. Dla zespołu? Zostawcie nawiasy tam, gdzie ludzie się
+  różnią (rola, odbiorca).
+- **„Nie poprawiaj po cichu" i „zapytaj o mapowanie" to celowe reguły.**
   Wtyczka, która sama zgaduje, że „Wydział Edukacji" = dział 801, jest
   wygodna – i niebezpieczna w zestawieniu dla banku.
-- **Formuły, nie wartości.** Wbudowany skill Excel i tak to wymusza, ale
-  wpisanie tej zasady we własny skill sprawia, że obowiązuje też, gdy
-  ktoś w zespole poprosi „szybko, bez formuł".
-- **Zero konektorów – świadomie.** Wtyczka pracuje tylko na plikach w
-  folderze. Podpięcie ERP, poczty czy dysku Urzędu to osobna decyzja IT
-  i Zamawiającego (zadanie 5), nie linijka w opisie.
-- **Koszt.** Tworzenie wtyczki jest tanie; jej uruchomienie na dwóch
-  plikach + prezentacja – nie (zadanie 8, Settings → Usage). Testujcie na
-  jednym pliku, a nie na dziesięciu miesiącach naraz.
-- **70–80% to nie 100%.** Wynik komend wygląda profesjonalnie, ale to
-  wersja robocza: mapowanie działów, odchylenia i prognoza są **do
-  sprawdzenia przez Was** za każdym razem. Na realnych danych Urzędu –
-  wyłącznie za pisemną zgodą (Blok B) i po ocenie IT.
+- **Zero konektorów – świadomie.** Podpięcie ERP, poczty czy dysku Urzędu
+  to decyzja IT i Zamawiającego (zadanie 5), nie linijka w opisie.
+- **Koszt.** Budowa wtyczki jest tania, uruchomienie na plikach
+  i prezentacja – nie (Settings → Usage). Testujcie na jednym pliku.
+- **To wersja robocza.** Mapowanie, odchylenia i prognoza są do Waszej
+  kontroli za każdym razem. Na realnych danych Urzędu – tylko za pisemną
+  zgodą (Blok B) i po ocenie IT.
 
 ## Notatki własne
 
 - Ile wydziałów oznaczyła komenda 1 jako przekraczające plan? (klucz: 7)
-- Czy komenda 2 zapytała o mapowanie nazw wydziałów na kody działów, czy
-  zgadła?
-- Jaka trzecia komenda w tej wtyczce oszczędziłaby Wam najwięcej czasu w
-  miesiącu?
+- Czy komenda 2 zapytała o mapowanie nazw na kody działów, czy zgadła?
+- Jaka trzecia komenda w tej wtyczce oszczędziłaby Wam najwięcej czasu
+  w miesiącu?
