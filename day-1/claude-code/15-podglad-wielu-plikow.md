@@ -4,39 +4,58 @@
 Excel, PowerPoint oraz automatyzacja zadań" (Urząd Miejski w Opolu, Dzień 1,
 **Blok D, 60 min: Claude Code – pierwszy kontakt**).
 
-**Cel:** poprosić o zestawienie informacji z kilku plików jednocześnie –
-bez otwierania każdego z osobna w Excelu.
+**Cel:** dostać jedną odpowiedź z sześciu plików – bez otwierania żadnego
+w Excelu.
 **Poziom:** podstawowy
 **Czas:** ok. 7 minut
 
 ## Materiały
 
-- Folder `test-claude-code` po zadaniach 13–14: 6 plików `.xlsx` (4 w
-  `Wrzesien/`+`Pazdziernik/`, 2 w `archiwum/`), wszystkie o tej samej
-  strukturze (Dział, Kwota planowana, Kwota wykonana, Miesiąc). Klucz
-  odpowiedzi z tabelą per miesiąc: `../materialy/test-claude-code/README.md`.
+- Folder `test-claude-code` (po zadaniach 13–14): 6 plików `.xlsx`
+  o tej samej strukturze (Dział, Kwota planowana, Kwota wykonana,
+  Miesiąc).
 
 ## Kroki
 
-1. Poproście o zbiorcze zestawienie: *„Przejrzyj wszystkie pliki .xlsx w
-   tym folderze i powiedz mi, w którym miesiącu suma przekroczeń budżetu
-   (wykonanie minus plan) była największa."*
-2. Zwróćcie uwagę, że Claude Code samodzielnie **otwiera po kolei każdy
-   plik**, liczy potrzebne wartości i dopiero na końcu podaje jedną,
-   zbiorczą odpowiedź.
-3. Poproście o rozwinięcie: *„Pokaż to w formie krótkiej tabeli: miesiąc,
-   suma planu, suma wykonania, różnica."*
-4. Zapytajcie, ile plików trzeba by otworzyć ręcznie w Excelu i ile
-   czasu zajęłoby przepisanie tych samych liczb na kartkę – dla
-   porównania z jednym poleceniem, które właśnie wykonaliście.
+1. Pytanie zbiorcze:
+
+   ```
+   Przejrzyj wszystkie pliki .xlsx w tym folderze i podfolderach
+   i powiedz, w którym miesiącu suma przekroczeń budżetu (wykonanie
+   minus plan, tylko dodatnie) była największa. Pomiń wiersze „Razem".
+   ```
+
+   Claude otwiera po kolei każdy plik, liczy i podaje jedną odpowiedź.
+
+   **Sprawdź:** **październik 2026** (393 000 zł przekroczeń).
+
+2. Rozbicie na liczby:
+
+   ```
+   Pokaż to w tabeli: miesiąc, suma planu, suma wykonania,
+   suma przekroczeń. Napisz, z których plików wziąłeś każdy miesiąc.
+   ```
+
+   **Sprawdź** (klucz):
+
+   | Miesiąc | Plan | Wykonanie | Przekroczenia |
+   |---|---|---|---|
+   | lipiec | 1 980 000 | 1 940 000 | 20 000 |
+   | sierpień | 2 381 000 | 2 373 000 | 60 000 |
+   | wrzesień | 5 320 000 | 5 216 000 | 98 000 |
+   | październik | 6 555 000 | 6 811 000 | 393 000 |
+
+   Jeśli wrzesień wyszedł wyżej – Claude doliczył wiersz „Razem"
+   z zadania 9. Dobry moment na zdanie: **zawsze sprawdzaj, co weszło do
+   sumy.**
+
+3. Policzcie: ile plików trzeba by otworzyć ręcznie i ile liczb
+   przepisać?
 
 ## Na co zwrócić uwagę
 
-- To jest właśnie „automatyzacja" z drugiej strony: nie tylko
-  przenoszenie/zmiana plików, ale też **czytanie i łączenie danych z
-  wielu plików naraz**.
-- Im więcej plików o podobnej strukturze, tym większa przewaga nad
-  ręcznym przeglądaniem – to bezpośrednio zapowiada Proces 1 i 2 z
-  Dnia 2.
-- Zawsze warto poprosić o **rozbicie na pojedyncze liczby** (jak w kroku
-  3), żeby móc zweryfikować, skąd wzięła się ostateczna odpowiedź.
+- Automatyzacja to nie tylko przenoszenie plików – to też **czytanie
+  i łączenie danych z wielu plików naraz**. To zapowiedź Procesu 1 i 2
+  z Dnia 2.
+- **Zawsze proście o rozbicie na pojedyncze liczby** – żeby wiedzieć,
+  skąd wziął się wynik.

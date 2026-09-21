@@ -4,37 +4,46 @@
 Excel, PowerPoint oraz automatyzacja zadań" (Urząd Miejski w Opolu, Dzień 1,
 **Blok D, 60 min: Claude Code – pierwszy kontakt**).
 
-**Cel:** zamiast ręcznie przeszukiwać Eksplorator plik po pliku – opisać
-Claude Code, czego szukacie, i pozwolić mu znaleźć to za Was.
+**Cel:** szukać po **treści**, nie po nazwie – opisać, czego szukacie,
+i dostać ścieżkę do pliku.
 **Poziom:** podstawowy
 **Czas:** ok. 6 minut
 
 ## Materiały
 
-- Folder `test-claude-code` po zadaniu 13 (już posegregowany na
-  `Wrzesien/` i `Pazdziernik/`). W `archiwum/` czeka plik o nieoczywistej
-  nazwie `zal_3_korekta.xlsx` – to on ma być „znaleziskiem" w kroku 1
-  (klucz odpowiedzi: `../materialy/test-claude-code/README.md`).
+- Folder `test-claude-code` (po zadaniu 13): `Wrzesien/`, `Pazdziernik/`,
+  `archiwum/`. W archiwum leży `zal_3_korekta.xlsx` – nazwa nic nie mówi,
+  ale w środku jest wydział Zieleni Miejskiej.
 
 ## Kroki
 
-1. Poproście o wyszukanie po **treści**, nie tylko po nazwie, np.: *„Znajdź
-   w tym folderze (i podfolderach) plik, w którym jest wydział 'Zieleni
-   Miejskiej'."*
-2. Zwróćcie uwagę, że Claude Code **zagląda do środka plików**, a nie
-   tylko patrzy na nazwy – tego nie da się łatwo zrobić samym
-   Eksploratorem Windows bez dodatkowych narzędzi.
-3. Spróbujcie mniej precyzyjnego zapytania, np.: *„Który plik ma
-   najwyższą kwotę wykonaną w kolumnie Kwota wykonana?"* – i sprawdźcie,
-   czy Claude Code sam przeszuka wszystkie pliki, żeby odpowiedzieć.
-4. Poproście o wskazanie **dokładnej ścieżki** do znalezionego pliku, żeby
-   móc go samodzielnie otworzyć.
+1. Szukanie po treści:
+
+   ```
+   Znajdź w tym folderze i podfolderach wszystkie pliki, w których
+   występuje wydział „Zieleni Miejskiej". Podaj pełne ścieżki.
+   ```
+
+   **Sprawdź:** Claude wymienia **6 plików**, w tym
+   `archiwum\zal_3_korekta.xlsx` – plik, którego po nazwie nikt by nie
+   znalazł.
+
+2. Pytanie mniej precyzyjne:
+
+   ```
+   W którym pliku jest najwyższa pojedyncza kwota w kolumnie
+   Kwota wykonana? Podaj kwotę, dział i ścieżkę do pliku.
+   ```
+
+   **Sprawdź:** **860 000 zł, Wydział Inwestycji**,
+   `Pazdziernik\UM_zestawienie_pazdziernik_PODSUMOWANIE.xlsx`.
+
+3. Otwórzcie wskazany plik z podanej ścieżki i potwierdźcie kwotę
+   w Excelu.
 
 ## Na co zwrócić uwagę
 
-- To pokazuje różnicę między szukaniem „po nazwie" (to potrafi też
-  Windows) a szukaniem „po treści i sensie" (to jest mocna strona AI).
-- Przy jednym pliku różnica jest kosmetyczna – przy dziesiątkach plików w
-  różnych podfolderach to ogromna oszczędność czasu.
-- Zawsze warto poprosić o **ścieżkę do pliku**, żeby zweryfikować wynik
-  samodzielnie, a nie polegać wyłącznie na podsumowaniu.
+- Windows szuka po nazwie. Claude Code szuka **po treści i sensie** –
+  zagląda do środka każdego pliku.
+- **Zawsze proście o ścieżkę** – żeby sprawdzić samodzielnie, nie na
+  słowo.

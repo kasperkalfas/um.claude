@@ -2,61 +2,71 @@
 
 Ćwiczenie do szkolenia „Wykorzystanie systemu AI Claude we współpracy z
 Excel, PowerPoint oraz automatyzacja zadań" (Urząd Miejski w Opolu, Dzień 1,
-**Blok D, 60 min: Claude Code – pierwszy kontakt**).
+**Blok D, 60 min: Claude Code – pierwszy kontakt**, materiał dodatkowy).
 
-**Cel:** zrozumieć, jak Claude Code „pamięta" zasady i kontekst projektu
-między rozmowami – żeby nie trzeba było za każdym razem od nowa
-tłumaczyć tych samych rzeczy.
+**Cel:** zapisać zasadę w pliku `CLAUDE.md` i sprawdzić, że Claude Code
+stosuje ją w nowej rozmowie bez przypominania.
 **Poziom:** podstawowy
 **Czas:** ok. 7 minut
 
-## Problem, który to rozwiązuje
+## Po co
 
-W Claude Czat, jeśli chcecie, żeby Claude zawsze pamiętał pewne zasady
-(np. „pracujemy tylko na danych fikcyjnych", „kwoty zawsze w PLN"),
-musicie je powtarzać w każdej nowej rozmowie albo polegać na funkcji
-pamięci z [zadania 2 z Bloku C](../claude-zadania/02-funkcje-interfejsu.md).
-W Claude Code jest na to prostszy sposób: **plik `CLAUDE.md`** w folderze
-projektu.
+W czacie zasady („kwoty w PLN", „tylko dane fikcyjne") trzeba powtarzać
+w każdej rozmowie. W Claude Code wystarczy zapisać je raz w pliku
+`CLAUDE.md` w folderze – obowiązują automatycznie w każdej rozmowie
+w tym folderze.
 
 ## Materiały
 
-- Folder testowy z poprzednich zadań.
+- Folder `test-claude-code`.
 
 ## Kroki
 
-1. Poproście Claude Code o pokazanie, czy w folderze, w którym pracujecie
-   na tym szkoleniu, istnieje plik `CLAUDE.md`: *„Czy w tym folderze jest
-   plik CLAUDE.md? Jeśli tak, pokaż mi jego zawartość."*
-2. **Żywy przykład od razu pod ręką**: to repozytorium szkoleniowe ma
-   swój własny plik `CLAUDE.md` w folderze głównym – zawiera m.in. fakty
-   o szkoleniu, zasadę „nie wklejamy poufnych danych Urzędu" i strukturę
-   folderów. Poproście prowadzącego o pokazanie go na ekranie – to
-   właśnie ten plik „prowadził" Claude Code przez całą tę rozmowę.
-3. W swoim folderze testowym poproście: *„Utwórz plik CLAUDE.md z jedną
-   zasadą: 'Wszystkie kwoty w tym projekcie podajemy w PLN z separatorem
-   tysięcy'."*
-4. Zamknijcie rozmowę (`/clear`) i zacznijcie nową w tym samym folderze.
-   Poproście o coś, co wymaga podania kwoty (np. *„Zapisz w nowym pliku
-   przykładową kwotę budżetu 112000"*) i sprawdźcie, czy Claude Code
-   **sam, bez przypominania**, zastosował zasadę z `CLAUDE.md`.
+1. Czy plik już jest?
+
+   ```
+   Czy w tym folderze jest plik CLAUDE.md? Jeśli tak, pokaż jego
+   zawartość.
+   ```
+
+   **Sprawdź:** w folderze testowym go nie ma. Prowadzący pokaże na
+   ekranie `CLAUDE.md` z repozytorium szkolenia – ten plik „prowadził"
+   Claude Code przy budowaniu tych materiałów.
+
+2. Utwórzcie własny:
+
+   ```
+   Utwórz plik CLAUDE.md z jedną zasadą: „Wszystkie kwoty w tym
+   projekcie podajemy w PLN z separatorem tysięcy, bez groszy,
+   np. 112 000 zł".
+   ```
+
+3. Nowa rozmowa:
+
+   ```
+   /clear
+   ```
+
+4. Poproście o coś z kwotą – **bez wspominania o zasadzie**:
+
+   ```
+   Zapisz w nowym pliku kwoty.txt trzy przykładowe kwoty budżetu:
+   112000, 2450000 i 98500.
+   ```
+
+5. **Sprawdź:** otwórzcie `kwoty.txt`. Kwoty zapisane jako
+   `112 000 zł`, `2 450 000 zł`, `98 500 zł` – zasada zadziałała sama.
 
 ## Na co zwrócić uwagę
 
-- `CLAUDE.md` to zwykły plik tekstowy – można go otworzyć i edytować jak
-  każdy inny dokument, nawet bez Claude Code.
-- Zasady z `CLAUDE.md` **obowiązują automatycznie w każdej nowej
-  rozmowie** w tym folderze – to jest właśnie ta „pamięć projektu", o
-  którą chodziło we wstępie.
-- To bardzo przydatne dla Waszej pracy: raz zapiszecie zasady Urzędu
-  (format kwot, zakaz danych osobowych, styl komunikatów – jak w
-  [zadaniu 8 z Bloku C](../claude-zadania/08-skille-z-internetu.md)) i
-  nie musicie ich powtarzać przy każdej kolejnej rozmowie.
-- To nie to samo, co pamięć konta z Claude Czat – `CLAUDE.md` jest
-  **przypisany do konkretnego folderu/projektu**, a nie do Waszego konta
-  w ogóle.
+- `CLAUDE.md` to zwykły plik tekstowy – można go edytować w Notatniku.
+- Jest **przypisany do folderu**, nie do konta – inaczej niż pamięć
+  w czacie.
+- Dla Urzędu: raz zapisujecie format kwot, zakaz danych osobowych, styl
+  komunikatów – i nie powtarzacie tego przy każdej rozmowie. W Dniu 2
+  zbudujecie taki plik dla Procesu 1 i 2.
 
 ## Notatki własne
 
-- Jakie 2–3 zasady ze swojej pracy zapisał(a)byś w `CLAUDE.md` folderu, w
-  którym trzymasz zestawienia swojego wydziału?
+- Jakie 2–3 zasady zapisał(a)byś w `CLAUDE.md` folderu z zestawieniami
+  swojego wydziału?

@@ -4,37 +4,39 @@
 Excel, PowerPoint oraz automatyzacja zadań" (Urząd Miejski w Opolu, Dzień 1,
 **Blok D, 60 min: Claude Code – pierwszy kontakt**).
 
-**Cel:** oswoić się z mechanizmem kontroli – Claude Code nie robi nic
-nieodwracalnego bez pytania, a Ty masz zawsze ostatnie słowo.
+**Cel:** przećwiczyć mechanizm kontroli – Claude Code nic nie zmienia bez
+pytania, a odrzucenie propozycji niczego nie psuje.
 **Poziom:** podstawowy
 **Czas:** ok. 6 minut
 
 ## Materiały
 
-- Folder `test-claude-code` na Pulpicie (kopia
-  `../materialy/test-claude-code/`, ta sama co w zadaniach 7–9) – w
-  folderze głównym jest `zestawienie_przykladowe.xlsx`.
+- Folder `test-claude-code` (po zadaniu 9) – w folderze głównym
+  `zestawienie_przykladowe.xlsx`.
 
 ## Kroki
 
-1. Poproście Claude Code o coś, co wymaga zmiany pliku, np.: *„Zmień
-   nazwę pliku zestawienie_przykladowe.xlsx na
-   zestawienie_wrzesien_2026.xlsx."*
-2. Zanim cokolwiek się zmieni, Claude Code **pokazuje dokładnie, co
-   zamierza zrobić** i prosi o potwierdzenie (podobnie jak tryb Manual we
-   wtyczce Chrome z [zadania 3](03-wtyczka-chrome.md)).
-3. Za pierwszym razem **odrzućcie** propozycję (opcja „Odrzuć"/„No") i
-   sprawdźcie w Eksploratorze plików, że nic się nie zmieniło.
-4. Poproście o to samo jeszcze raz i tym razem **zaakceptujcie** –
-   sprawdźcie, że plik faktycznie zmienił nazwę.
+1. Poproście o zmianę, która dotyka pliku:
+
+   ```
+   Zmień nazwę pliku zestawienie_przykladowe.xlsx
+   na zestawienie_wrzesien_2026.xlsx.
+   ```
+
+2. Claude Code pokazuje dokładnie, co zamierza zrobić, i czeka na
+   potwierdzenie.
+3. **Odrzućcie** („No" / „Odrzuć").
+4. **Sprawdź** w Eksploratorze: plik nadal nazywa się
+   `zestawienie_przykladowe.xlsx`. Nic się nie stało.
+5. Poproście jeszcze raz (możecie po prostu napisać `Zrób to jednak`)
+   i tym razem **zaakceptujcie**.
+6. **Sprawdź** w Eksploratorze: plik nazywa się teraz
+   `zestawienie_wrzesien_2026.xlsx`.
 
 ## Na co zwrócić uwagę
 
-- To jest dokładnie ta sama zasada bezpieczeństwa, co przy connectorach i
-  Cowork ([zadanie 1](01-czym-jest-cowork.md)) – Claude pyta, zanim
-  zmieni cokolwiek trwałego.
-- Odrzucenie propozycji **nic nie psuje** – to bezpieczny, odwracalny
-  krok, nie błąd.
-- Właśnie dlatego kolejne zadania w tym bloku (i cały Dzień 2) można
-  bezpiecznie testować na plikach – zawsze zobaczycie propozycję zmiany,
-  zanim się wydarzy.
+- Ta sama zasada co w Cowork i wtyczce Chrome (tryb Manual): Claude pyta,
+  zanim zmieni cokolwiek trwałego.
+- Odrzucenie to bezpieczny, normalny krok – nie błąd.
+- Dzięki temu cały Blok D i Dzień 2 można testować bez obaw: zawsze
+  widzicie propozycję, zanim się wykona.

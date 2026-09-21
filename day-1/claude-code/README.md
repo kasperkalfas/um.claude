@@ -17,11 +17,14 @@ prowadzący: Kasper Kalfas).
 
 ## Materiał wprowadzający (do samodzielnej pracy)
 
-1. [01 – Czym jest Claude Cowork i jak go zainstalować](01-czym-jest-cowork.md)
-2. [02 – Czym jest Claude Code i czym różni się od zwykłego chatbota?](02-czym-jest-claude-code.md)
-3. [03 – Wtyczka Claude in Chrome – instalacja i uprawnienia](03-wtyczka-chrome.md)
-4. [04 – Wtyczka Claude in Chrome razem z Cowork – praktyka](04-wtyczka-i-cowork-razem.md)
-5. [05 – Wyszukiwanie w sieci – informacje o Urzędzie Miejskim w Opolu](05-wyszukiwanie-o-urzedzie.md)
+Każde zadanie = krótki wstęp + kroki z gotowymi poleceniami w ramkach
++ „Sprawdź". Łącznie ok. 70 min.
+
+1. [01 – Czym jest Claude Cowork i jak go zainstalować](01-czym-jest-cowork.md) *(15 min)*
+2. [02 – Czym jest Claude Code i czym różni się od zwykłego chatbota?](02-czym-jest-claude-code.md) *(10 min)*
+3. [03 – Wtyczka Claude in Chrome – instalacja i uprawnienia](03-wtyczka-chrome.md) *(15 min)*
+4. [04 – Wtyczka Claude in Chrome razem z Cowork – praktyka](04-wtyczka-i-cowork-razem.md) *(15 min)*
+5. [05 – Wyszukiwanie w sieci – informacje o Urzędzie Miejskim w Opolu](05-wyszukiwanie-o-urzedzie.md) *(15 min)*
 
 ## Checklista: Zadania 6–19 (Blok D, 60 min)
 

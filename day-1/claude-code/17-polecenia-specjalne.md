@@ -2,43 +2,61 @@
 
 Ćwiczenie do szkolenia „Wykorzystanie systemu AI Claude we współpracy z
 Excel, PowerPoint oraz automatyzacja zadań" (Urząd Miejski w Opolu, Dzień 1,
-**Blok D, 60 min: Claude Code – pierwszy kontakt**).
+**Blok D, 60 min: Claude Code – pierwszy kontakt**, materiał dodatkowy).
 
-**Cel:** poznać podstawowe polecenia zaczynające się od „/" – to jedyna
-„programistyczna" rzecz, jakiej potrzebujecie w Claude Code, i to tylko
-kilka prostych słów.
+**Cel:** poznać kilka poleceń zaczynających się od `/` – jedyną „składnię"
+w Claude Code.
 **Poziom:** podstawowy
 **Czas:** ok. 6 minut
 
 ## Materiały
 
-- Claude Code uruchomiony w dowolnym folderze (może być ten sam folder
-  testowy co w [zadaniach 7–16](07-pierwszy-kontakt-terminal.md)).
+- Claude Code w dowolnym folderze (może być `test-claude-code`).
 
 ## Kroki
 
-1. Wpiszcie `/help` i zobaczcie listę wszystkich dostępnych poleceń
-   specjalnych – to „ściągawka" wbudowana w samo narzędzie, zawsze pod
-   ręką.
-2. Wpiszcie `/clear`, żeby zacząć **zupełnie nową rozmowę** w tym samym
-   folderze – to odpowiednik przycisku „New chat" z Claude Czat
-   ([zadanie 2 z Bloku C](../claude-zadania/02-funkcje-interfejsu.md)).
-3. Zamknijcie i ponownie uruchomcie Claude Code w tym samym folderze,
-   wpisując w terminalu `claude --continue` (albo `-c`) zamiast zwykłego
-   `claude` – zobaczcie, że wraca do **ostatniej rozmowy**, tak jak lista
-   rozmów po lewej stronie w Claude Czat.
-4. Wróćcie do bieżącej rozmowy i wpiszcie `/model`, żeby zobaczyć, jakiego
-   modelu Claude aktualnie używacie i jakie są inne opcje.
+1. Lista wszystkich poleceń:
+
+   ```
+   /help
+   ```
+
+2. Nowa, czysta rozmowa w tym samym folderze (odpowiednik „New chat"):
+
+   ```
+   /clear
+   ```
+
+   **Sprawdź:** zapytajcie `O czym rozmawialiśmy przed chwilą?` – Claude
+   nie pamięta. To celowe.
+
+3. Powrót do ostatniej rozmowy. Zamknijcie Claude Code (`/exit`)
+   i uruchomcie w terminalu:
+
+   ```powershell
+   claude --continue
+   ```
+
+   **Sprawdź:** Claude wraca do rozmowy sprzed `/clear`? Nie – wraca do
+   **ostatniej**, czyli tej pustej po `/clear`. Wcześniejszą znajdziecie
+   przez `claude --resume` (lista rozmów do wyboru).
+
+4. Który model pracuje:
+
+   ```
+   /model
+   ```
+
+5. Ile okna kontekstu jest zajęte i przez co:
+
+   ```
+   /context
+   ```
 
 ## Na co zwrócić uwagę
 
-- Nie musicie zapamiętywać wszystkich poleceń – `/help` zawsze pokaże
-  pełną listę.
-- Polecenia zaczynające się od „/" to jedyna „specjalna składnia" w całym
-  Claude Code – reszta to zwykła rozmowa po polsku, dokładnie jak dotąd.
-- `/clear` i `claude --continue` to dwie strony tego samego mechanizmu co
-  w czacie: czysta karta vs. wracanie do wcześniejszej pracy.
-- Dwa polecenia warte osobnej uwagi to `/context` (ile okna kontekstu
-  jest zajęte i przez co) i `/compact` (streszczenie rozmowy, żeby
-  zwolnić miejsce) – omawiamy je w
-  [zadaniu 3 z folderu o tokenach i oknie kontekstu](../tokeny-i-okno-kontekstu/03-kontekst-w-claude-code.md).
+- Nie trzeba nic zapamiętywać – `/help` zawsze pokaże listę.
+- `/clear` = czysta karta; `claude --continue` / `--resume` = powrót do
+  pracy. Jak „New chat" i lista rozmów w czacie.
+- `/context` i `/compact` (streszczenie rozmowy, żeby zwolnić miejsce)
+  omawiamy w [zadaniu 3 o tokenach i oknie kontekstu](../tokeny-i-okno-kontekstu/03-kontekst-w-claude-code.md).
