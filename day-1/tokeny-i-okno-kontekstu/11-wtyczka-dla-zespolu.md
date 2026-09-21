@@ -92,8 +92,12 @@ Scenariusz: Skarbnik chce widzieć odchylenia już od 5%.
 
 **Zrób:** **Customize → Plugins → wydzial-finansowy → Commands →
 analiza-odchylen → Edit**. Zmieńcie `10%` na `5%` i dopiszcie krok:
-*„Osobno wypisz działy między 5% a 10% jako 'do obserwacji'."* Zapiszcie
-i uruchomcie komendę ponownie.
+
+```
+Osobno wypisz działy między 5% a 10% jako „do obserwacji".
+```
+
+Zapiszcie i uruchomcie komendę ponownie.
 
 **Sprawdź:**
 

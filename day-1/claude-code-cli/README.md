@@ -165,7 +165,8 @@ Pełny klucz wypisuje też `python generuj_dane.py`.
 ## Jak korzystać z tych plików
 
 Każdy plik `.md` ma tę samą strukturę: cel, poziom, czas, blok, materiały,
-kroki (z gotowymi poleceniami po polsku w cudzysłowie), „Na co zwrócić
-uwagę", „Notatki własne". Polecenia są napisane tak, żeby je wkleić do
-Claude Code 1:1 – ale zachęcamy, żeby je zmieniać: to najlepszy sposób,
-żeby zobaczyć, jak precyzja polecenia wpływa na wynik.
+kroki, „Na co zwrócić uwagę", „Notatki własne". Każde polecenie do Claude
+Code jest w ramce – do skopiowania 1:1 – a po kluczowych krokach jest
+**Sprawdź:** z wartością z klucza odpowiedzi. Zachęcamy, żeby polecenia
+zmieniać: to najlepszy sposób, żeby zobaczyć, jak precyzja polecenia
+wpływa na wynik.

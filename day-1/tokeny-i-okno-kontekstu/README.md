@@ -4,32 +4,28 @@ Materiał do szkolenia „Wykorzystanie systemu AI Claude we współpracy z
 Excel, PowerPoint oraz automatyzacja zadań" (Urząd Miejski w Opolu,
 prowadzący: Kasper Kalfas).
 
-**Miejsce w agendzie:** krótki wstęp teoretyczny **na początku Bloku D
-(Claude Code – pierwszy kontakt)** albo materiał do samodzielnej pracy
-między Blokiem C a D. Zadania 1–4 to praktyka na tokenizerze i w Claude Code,
-5–6 to teoria (MCP, wtyczki), 7–8 to dłuższe demo wtyczki Data w Cowork, 9–11 to praca
-własna (skill z internetu, własna wtyczka Wydziału, wtyczka dla zespołu). Zadania 1–6
-łącznie ok. 42 minuty, zadania 7–8 osobno ok. 45 minut, zadania 9–11 ok. 95 minut. Zadanie 3 wymaga
-zainstalowanego Claude Code (`../claude-code/06-instalacja-claude-code-cli.md`),
-zadania 6–11 – aplikacji Claude Cowork (`../claude-code/01-czym-jest-cowork.md`).
+**Miejsce w agendzie:** krótki wstęp na początku **Bloku D (Claude Code –
+pierwszy kontakt)** albo praca własna między Blokiem C a D.
+
+| Zadania | Forma | Czas | Wymaga |
+|---|---|---|---|
+| 1–4 | praktyka: tokenizer, Claude Czat, Claude Code | ok. 26 min | zad. 3: Claude Code ([instalacja](../claude-code/06-instalacja-claude-code-cli.md)) |
+| 5–6 | krótka teoria + podgląd na własnym koncie (MCP, wtyczki) | ok. 16 min | zad. 6: Cowork ([wstęp](../claude-code/01-czym-jest-cowork.md)) |
+| 7–8 | demo prowadzącego: wtyczka Data w Cowork | ok. 45 min | Cowork |
+| 9–11 | praca własna: skill z internetu, własna wtyczka, wtyczka dla zespołu | ok. 95 min | Cowork |
+
+Każde zadanie: krótki wstęp, kroki z gotowymi poleceniami w ramkach,
+„Sprawdź" z kluczem.
 
 ## Po co to w ogóle?
 
-Zwykle nie trzeba wiedzieć, jak działa silnik, żeby prowadzić samochód.
-Ale z Claude są dwie sytuacje, w których „silnik" zaczyna mieć znaczenie:
-
-1. **Długa rozmowa albo duży plik** — Claude w pewnym momencie „zapomina"
-   początek rozmowy, streszcza ją (Claude Code: `/compact`, Cowork:
-   pasek kontekstu po prawej) albo odmawia wczytania zbyt dużego dokumentu.
-2. **Praca na wielu plikach w Claude Code** — kiedy prosicie o
-   przejrzenie folderu z setkami zestawień, Claude Code **nie wczytuje
-   wszystkiego naraz**, tylko zarządza tym, co ma „przed oczami".
-
-Obie sytuacje sprowadzają się do dwóch pojęć: **token** (jednostka, w
-której model liczy tekst) i **okno kontekstu** (ile takich jednostek
-model może mieć „przed oczami" jednocześnie). Zrozumienie ich pozwala
-przewidzieć, kiedy Claude sobie poradzi, kiedy trzeba mu pomóc – i ile to
-kosztuje.
+Dwie sytuacje, w których „silnik" Claude zaczyna mieć znaczenie: **długa
+rozmowa lub duży plik** (Claude „zapomina" początek, streszcza rozmowę,
+odmawia wczytania dokumentu) i **praca na wielu plikach w Claude Code**
+(nie wczytuje wszystkiego naraz, tylko zarządza tym, co ma „przed
+oczami"). Obie sprowadzają się do dwóch pojęć: **token** (jednostka,
+w której model liczy tekst) i **okno kontekstu** (ile takich jednostek
+widzi jednocześnie).
 
 ## Zadania
 
@@ -46,12 +42,12 @@ kosztuje.
 - [ ] **[04 – „Proszę" i „dziękuję" też kosztują – jak pisać oszczędnie](04-grzecznosc-kosztuje-tokeny.md)** *(6 min)*
       — to samo polecenie w trzech wersjach na tokenizerze: rzeczowe,
       „pismo urzędowe" i P.K.Z.O. Co tniemy, a czego nie.
-- [ ] **[05 – MCP – jak Claude sięga po dane i narzędzia poza rozmową](05-mcp-czyli-jak-claude-siega-po-dane.md)** *(8 min, teoria)*
-      — serwer / klient / model, co z konektorów trafia do okna kontekstu,
-      dlaczego podpięcie ERP to decyzja IT i Zamawiającego, nie użytkownika.
-- [ ] **[06 – Wtyczki (plugins) – skille, konektory, komendy i subagenci w jednym](06-wtyczki-czyli-skille-konektory-i-komendy-w-jednym.md)** *(8 min, teoria + podgląd katalogu)*
-      — cztery elementy wtyczki, subagenci i ich własne okna kontekstu,
-      katalog w Cowork (Customize → Browse plugins) bez instalowania.
+- [ ] **[05 – MCP – jak Claude sięga po dane i narzędzia poza rozmową](05-mcp-czyli-jak-claude-siega-po-dane.md)** *(8 min)*
+      — serwer / klient / model; `/mcp` i `/context` na własnym koncie, jedno
+      wywołanie krok po kroku, dlaczego podpięcie ERP to decyzja IT i Zamawiającego.
+- [ ] **[06 – Wtyczki (plugins) – skille, konektory, komendy i subagenci w jednym](06-wtyczki-czyli-skille-konektory-i-komendy-w-jednym.md)** *(8 min)*
+      — cztery elementy wtyczki, subagenci; katalog w Cowork (Customize →
+      Browse plugins) i rozbiórka jednej wtyczki finansowej, bez instalowania.
 - [ ] **[07 – Od surowego Excela do dashboardu – wtyczka Data w Cowork](07-dashboard-z-wtyczka-data.md)** *(25 min, demo prowadzącego / praca własna)*
       — `/explore-data` → `/validate` → czyszczenie do `_v1` →
       `/build-dashboard` na fikcyjnych zestawieniach; klucz odpowiedzi w środku.
