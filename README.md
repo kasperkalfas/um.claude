@@ -22,7 +22,7 @@ Urzędu Miejskiego w Opolu. Organizator: Park Naukowo-Technologiczny w Opolu.
 |---|---|---|---|
 | 1 | 22.09 | Podstawy AI, dane jako fundament, Claude Czat, pierwszy kontakt z Claude Code | `day-1/` |
 | 2 | 23.09 | Excel i automatyzacja z Claude Code; dodatki Claude w Excelu i PowerPoincie | `day-1/claude-code-cli/`, `day-2/` |
-| 3 | 25.09 | DataPOV, prezentacje z Claude, wizualizacja danych, mapowanie procesów | `day-3/` |
+| 3 | 25.09 | DataPOV, prezentacje z Claude, wizualizacja danych, mapowanie procesów | `day-2/DataPOV-punkt-widzenia-na-dane.pptx`, `day-2/claude-w-powerpoincie/` |
 
 ### Dzień 1 — bloki
 
@@ -53,8 +53,9 @@ Każdy folder ma własny `README.md` z kolejnością, minutażem i kluczem odpow
 ```
 agenda/     agenda szkolenia (md + pdf)
 day-1/      prezentacje Bloków A–C (.pptx) + 4 zestawy ćwiczeń (patrz wyżej)
-day-2/      dodatki Claude w Excelu i PowerPoincie, baza wiedzy w Obsidianie
-day-3/      prezentacja DataPOV (Blok A) — DataPOV-punkt-widzenia-na-dane.pptx
+day-2/      dodatki Claude w Excelu i PowerPoincie, baza wiedzy w Obsidianie,
+            prezentacja DataPOV (DataPOV-punkt-widzenia-na-dane.pptx — Blok A Dnia 3)
+day-3/      (pusty — Bloki B–E Dnia 3 do przygotowania)
 materialy/  materiały pomocnicze do Dnia 3 (data storytelling, DataPOV)
 umowa/      dokumenty umowne i wzory — lokalnie, poza repozytorium
 CLAUDE.md   kontekst projektu dla Claude Code — lokalnie, poza repozytorium
@@ -80,28 +81,3 @@ generator, `python <skrypt>.py` odtwarza czyste pliki i wypisuje klucz odpowiedz
 Układ plików Excel (kody działów w kolumnie A, wiersze 6–13) jest wspólny dla
 szablonu miesięcznego i pliku rocznego, żeby „dopasowanie po kodzie działu" było
 ćwiczone jawnie.
-
-## Bezpieczeństwo danych
-
-Ćwiczenia działają **wyłącznie na danych fikcyjnych lub zanonimizowanych**,
-wzorowanych na procesach Urzędu. Zasada „co wolno, a czego nie wolno wklejać do
-Claude" jest omawiana w Dniu 1 (Blok B) i powtarzana w każdym zadaniu; dotyczy
-także konektorów, skilli i wtyczek. Dokumenty umowne i notatki robocze pozostają
-lokalnie, poza repozytorium.
-
-## Status
-
-- [x] Dzień 1: prezentacje Bloków A–C, ćwiczenia Claude Czat i Claude Code, dane wsadowe
-- [ ] Dzień 1: materiały do Bloku E (Power BI / Excel)
-- [ ] Dzień 1–2: prezentacja wprowadzająca do Claude Code CLI; sprawdzenie laptopów uczestników (Python + openpyxl, Git, Claude Code, dostęp do sklepu dodatków Office)
-- [x] Dzień 2: dodatki Claude w Excelu i PowerPoincie, baza wiedzy w Obsidianie
-- [x] Dzień 3: prezentacja Bloku A (DataPOV)
-- [ ] Dzień 3: Bloki B–E (prezentacje z Claude, wizualizacja, mapowanie procesów)
-- [ ] Po szkoleniu (do 29.09): listy obecności, certyfikaty, protokół realizacji
-
-## Konwencje
-
-- Istotnym dokumentom źródłowym (pdf/docx/pptx) towarzyszy plik `kontekst_*.md`
-  lub `opis_*.md` ze streszczeniem po polsku.
-- Zadania mają jednolitą strukturę: cel, poziom, czas, materiały, kroki,
-  „Na co zwrócić uwagę", „Notatki własne". Numer w nazwie pliku = numer zadania.
