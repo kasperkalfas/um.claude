@@ -33,22 +33,32 @@ jest dostępny – zasada pracy jest identyczna.
    przejdź przez nią tak jak przy Gmailu.
 2. Wyszukaj loty promptem P.K.Z.O.:
 
-   > **P:** Jesteś doradcą podróży planującym wyjazdy grupowe.
-   > **K:** Planuję (przykładowy) wyjazd studyjny dla dwóch pracowników
-   > urzędu na konferencję samorządową w Brukseli, na trzy dni w drugiej
-   > połowie przyszłego miesiąca. Wylot z Wrocławia lub Katowic – z Opola
-   > nie ma bezpośrednich lotów. Terminy elastyczne, budżet ograniczony.
-   > **Z:** Znajdź najtańsze połączenia lotnicze w obie strony.
-   > **O:** Przedstaw 3 opcje w tabeli: data wylotu i powrotu, godziny,
-   > przewoźnik, cena, liczba przesiadek. Ceny w PLN.
+   ```
+   P: Jesteś doradcą podróży planującym wyjazdy grupowe.
+   K: Planuję (przykładowy) wyjazd studyjny dla dwóch pracowników urzędu
+      na konferencję samorządową w Brukseli, na trzy dni w drugiej połowie
+      przyszłego miesiąca. Wylot z Wrocławia lub Katowic – z Opola nie ma
+      bezpośrednich lotów. Terminy elastyczne, budżet ograniczony.
+   Z: Znajdź najtańsze połączenia lotnicze w obie strony.
+   O: Przedstaw 3 opcje w tabeli: data wylotu i powrotu, godziny,
+      przewoźnik, cena, liczba przesiadek. Ceny w PLN.
+   ```
 
 3. Poproś o dopasowanie noclegu do wybranego wariantu:
-   *"Dla najtańszej opcji znajdź nocleg dla dwóch osób blisko centrum
+
+   ```
+   Dla najtańszej opcji znajdź nocleg dla dwóch osób blisko centrum
    Brukseli, z oceną minimum 8.0 i bezpłatnym anulowaniem. Pokaż 3
-   propozycje w tabeli z ceną za cały pobyt."*
+   propozycje w tabeli z ceną za cały pobyt.
+   ```
+
 4. Poproś o podsumowanie całości:
-   *"Zsumuj koszt wybranego wariantu (loty + nocleg) i przygotuj krótkie
-   uzasadnienie wyboru w 3 zdaniach."*
+
+   ```
+   Zsumuj koszt wybranego wariantu (loty + nocleg) i przygotuj krótkie
+   uzasadnienie wyboru w 3 zdaniach.
+   ```
+
 5. Sprawdź jedną z propozycji bezpośrednio w serwisie (Kiwi.com lub
    Booking.com) i porównaj cenę z tą podaną przez Claude.
 

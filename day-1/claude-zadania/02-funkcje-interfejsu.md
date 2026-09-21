@@ -46,8 +46,12 @@ Zanim przejdziesz do kroków, zlokalizuj na ekranie:
 2. Kliknij ikonę wgrywania pliku przy polu wiadomości i dodaj ten plik do
    rozmowy.
 3. Poproś Claude o opis struktury, np.:
-   *"Opisz strukturę tego pliku: ile jest kolumn, co zawierają, czy widzisz
-   jakieś braki lub niespójności."*
+
+   ```
+   Opisz strukturę tego pliku: ile jest kolumn, co zawierają, czy widzisz
+   jakieś braki lub niespójności.
+   ```
+
 4. Zwróć uwagę, że Claude "widzi" tylko to, co jest w pliku – nazwy kolumn i
    arkuszy pomagają mu zrozumieć dane szybciej (to samo metadane, o których
    mówiliśmy w Bloku B).
@@ -55,14 +59,23 @@ Zanim przejdziesz do kroków, zlokalizuj na ekranie:
 ### Część 2: Artifacts – gdy odpowiedź to więcej niż tekst
 
 5. W tej samej rozmowie poproś:
-   *"Podsumuj te dane w przejrzystej tabeli i dodaj do niej krótki komentarz
-   pod spodem."*
+
+   ```
+   Podsumuj te dane w przejrzystej tabeli i dodaj do niej krótki komentarz
+   pod spodem.
+   ```
+
 6. Zauważ, że dłuższa tabela lub dokument pojawia się w osobnym panelu
    (Artifact) obok rozmowy, a nie jako zwykły tekst na czacie – łatwiej go
    przewijać, kopiować i edytować.
-7. Poproś o zmianę w Artifact, np.: *"Dodaj kolumnę z procentowym odchyleniem
-   od planu"* – sprawdź, czy Claude modyfikuje istniejący dokument, zamiast
-   tworzyć wszystko od nowa.
+7. Poproś o zmianę w Artifact:
+
+   ```
+   Dodaj kolumnę z procentowym odchyleniem od planu.
+   ```
+
+   Sprawdź, czy Claude modyfikuje istniejący dokument, zamiast tworzyć
+   wszystko od nowa.
 
 ### Część 3: Styl odpowiedzi i pamięć
 

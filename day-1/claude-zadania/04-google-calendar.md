@@ -30,26 +30,40 @@ uważnie, co Claude proponuje zrobić, zanim potwierdzisz.
    connectors"** (pełna instrukcja w README, sekcja „Jak podłączyć /
    odłączyć usługę").
 2. Zacznij od odczytu – poproś o podsumowanie:
-   *"Pokaż moje wydarzenia z najbliższych 7 dni w formie listy: data,
-   godzina, nazwa. Zaznacz dni, w których nie mam nic zaplanowanego."*
+
+   ```
+   Pokaż moje wydarzenia z najbliższych 7 dni w formie listy: data,
+   godzina, nazwa. Zaznacz dni, w których nie mam nic zaplanowanego.
+   ```
+
 3. Poproś o znalezienie wolnego terminu:
-   *"Znajdź w przyszłym tygodniu dwa wolne terminy po 60 minut, między 9:00
-   a 15:00, w dni robocze."*
+
+   ```
+   Znajdź w przyszłym tygodniu dwa wolne terminy po 60 minut, między 9:00
+   a 15:00, w dni robocze.
+   ```
+
 4. Utwórz wydarzenie testowe promptem P.K.Z.O., np.:
 
-   > **P:** Jesteś asystentem organizującym moje spotkania.
-   > **K:** Planuję cykliczne spotkanie zespołu ds. zestawień budżetowych z
-   > przedstawicielami wydziałów urzędu.
-   > **Z:** Utwórz w moim kalendarzu wydarzenie testowe.
-   > **O:** Nazwa "TEST – spotkanie zespołu budżetowego", w przyszły
-   > wtorek o 10:00, czas trwania 45 minut, z opisem zawierającym trzy
-   > punkty agendy (np. przegląd wykonania budżetu, przygotowanie
-   > zestawienia miesięcznego, pytania do wydziałów).
+   ```
+   P: Jesteś asystentem organizującym moje spotkania.
+   K: Planuję cykliczne spotkanie zespołu ds. zestawień budżetowych
+      z przedstawicielami wydziałów urzędu.
+   Z: Utwórz w moim kalendarzu wydarzenie testowe.
+   O: Nazwa "TEST – spotkanie zespołu budżetowego", w przyszły wtorek
+      o 10:00, czas trwania 45 minut, z opisem zawierającym trzy punkty
+      agendy (np. przegląd wykonania budżetu, przygotowanie zestawienia
+      miesięcznego, pytania do wydziałów).
+   ```
 
 5. Sprawdź w Google Calendar, czy wydarzenie się pojawiło i czy zgadzają
    się szczegóły.
-6. Poproś o modyfikację, np.: *"Przesuń wydarzenie TEST o godzinę później
-   i dodaj link do Google Meet."*
+6. Poproś o modyfikację:
+
+   ```
+   Przesuń wydarzenie TEST o godzinę później i dodaj link do Google Meet.
+   ```
+
 7. Na koniec posprzątaj: *"Usuń wydarzenie TEST z mojego kalendarza."*
    Sprawdź w kalendarzu, czy faktycznie zniknęło.
 

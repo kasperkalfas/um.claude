@@ -148,12 +148,21 @@ instalujesz go, tylko poniżej sprawdzasz go w praktyce.
      formuły takie, jak poprosisz, bez „ulepszania" po swojemu.
 2. Sprawdź to w praktyce: w claude.ai wgraj `zestawienie_przykladowe.xlsx`
    i poproś:
-   *„Dodaj na dole wiersz »Razem« z formułą sumującą kolumny Kwota
-   planowana i Kwota wykonana. Zwróć plik do pobrania."*
+
+   ```
+   Dodaj na dole wiersz „Razem" z formułą sumującą kolumny Kwota planowana
+   i Kwota wykonana. Zwróć plik do pobrania.
+   ```
+
 3. Pobierz plik, otwórz w Excelu i kliknij komórkę z sumą. Powinna
    zawierać **formułę** (`=SUMA(...)` / `=SUM(...)`), nie wpisaną liczbę –
-   to właśnie zasada ze skilla. Jeśli jest liczba, napisz Claude: „Użyj
-   formuły, nie wpisanej wartości" – i zobacz różnicę.
+   to właśnie zasada ze skilla. Jeśli jest liczba, napisz Claude:
+
+   ```
+   Użyj formuły, nie wpisanej wartości.
+   ```
+
+   – i zobacz różnicę.
 
 ### Część 2: Zainstaluj `internal-comms`
 
@@ -169,16 +178,24 @@ instalujesz go, tylko poniżej sprawdzasz go w praktyce.
 ### Część 3: Przetestuj na fikcyjnym zestawieniu
 
 7. Wgraj `zestawienie_miesieczne_PODSUMOWANIE.xlsx` i poproś:
-   *„Przygotuj raport statusu wykonania budżetu za październik dla Pani
+
+   ```
+   Przygotuj raport statusu wykonania budżetu za październik dla Pani
    Skarbnik: co idzie zgodnie z planem, gdzie są przekroczenia, jakie
-   problemy wymagają decyzji."*
+   problemy wymagają decyzji.
+   ```
+
    Skill powinien rozpoznać „raport statusu" i użyć swojego formatu –
    sprawdź, czy struktura odpowiedzi różni się od zwykłej odpowiedzi Claude
    (porównaj z tym, co dostawałeś/aś w zadaniu 3).
 8. Sprawdź drugi format – odpowiedź FAQ, czyli powtarzalne pytanie od
    wydziałów:
-   *„Napisz odpowiedź FAQ dla wydziałów: dlaczego zestawienie miesięczne
-   musi być bez scalonych komórek i w jednym formacie daty."*
+
+   ```
+   Napisz odpowiedź FAQ dla wydziałów: dlaczego zestawienie miesięczne
+   musi być bez scalonych komórek i w jednym formacie daty.
+   ```
+
    (Argumenty masz w Bloku B.)
 9. Zanotuj, co w tych odpowiedziach **nie pasuje** do Urzędu – ton, język
    angielskie nazwy sekcji, brak zasad RODO, format kwot. To lista zmian

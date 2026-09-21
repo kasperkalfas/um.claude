@@ -43,8 +43,11 @@ Skill będzie znał dwa stałe formaty notatki:
 
 1. Upewnij się, że żaden skill budżetowy nie jest włączony.
 2. Wgraj plik `zestawienie_miesieczne_PODSUMOWANIE.xlsx` i wyślij:
-   *„Napisz notatkę o odchyleniach budżetowych na podstawie tego
-   zestawienia."*
+
+   ```
+   Napisz notatkę o odchyleniach budżetowych na podstawie tego zestawienia.
+   ```
+
 3. Zachowaj wynik – to Twoje „przed". Zwykle wychodzi poprawna, ale za
    każdym razem inaczej ułożona notatka – inny próg, inna kolejność, inny
    ton.
@@ -145,11 +148,19 @@ językiem.
    Notatka powinna mieć max 6 pozycji, sortowanie malejąco, kwoty w PLN i
    nigdzie nie zgadywać przyczyny odchylenia.
 10. Poproś wprost o drugi format:
-    *„Przygotuj tę samą notatkę w wersji dla banku."*
+
+    ```
+    Przygotuj tę samą notatkę w wersji dla banku.
+    ```
+
     Sprawdź, czy pojawia się kontekst, konsekwencje i rekomendacja –
     elementy, których nie było w formacie wewnętrznym.
 11. Sprawdź granice skilla – poproś o coś spoza jego opisu:
-    *„Napisz notatkę o remoncie chodnika na ulicy Ozimskiej."*
+
+    ```
+    Napisz notatkę o remoncie chodnika na ulicy Ozimskiej.
+    ```
+
     Skill nie powinien się uruchomić, bo opis (`description`) mówi tylko
     o odchyleniach budżetowych na podstawie zestawienia plan/wykonanie.
 

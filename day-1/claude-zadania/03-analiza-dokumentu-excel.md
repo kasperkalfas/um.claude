@@ -38,13 +38,21 @@ Dniu 2 zrobimy to samo w Claude Code.
 
 1. Rozpocznij nową rozmowę i wgraj plik `zestawienie_miesieczne_PRZYKLAD.xlsx`.
 2. Poproś o ogólny przegląd:
-   *"Przeanalizuj ten arkusz i powiedz, co zawiera: jakie kolumny, ile
-   wierszy, za jaki okres."*
+
+   ```
+   Przeanalizuj ten arkusz i powiedz, co zawiera: jakie kolumny, ile
+   wierszy, za jaki okres.
+   ```
+
 3. Poproś o wskazanie problemów – konkretnie, tak jak w checkliście z
    Bloku B:
-   *"Sprawdź ten arkusz pod kątem: scalonych komórek, niespójnych formatów
+
+   ```
+   Sprawdź ten arkusz pod kątem: scalonych komórek, niespójnych formatów
    dat i liczb, brakujących nagłówków, pustych wierszy. Wypisz, co
-   znalazłeś, wskazując konkretną komórkę lub wiersz."*
+   znalazłeś, wskazując konkretną komórkę lub wiersz.
+   ```
+
 4. Otwórz plik równolegle w Excelu i sprawdź, czy wskazane miejsca się
    zgadzają. Zwróć uwagę, czy Claude coś pominął albo błędnie zinterpretował.
 
@@ -56,25 +64,33 @@ Dniu 2 zrobimy to samo w Claude Code.
    wyszukiwaniu usterek). Zbuduj prompt według formuły z
    [zadania 1](01-formula-pkzo.md), np.:
 
-   > **P:** Jesteś analitykiem finansowym przygotowującym materiał dla
-   > przełożonej.
-   > **K:** Mam zestawienie miesięczne wydatków kilku (fikcyjnych)
-   > wydziałów urzędu.
-   > **Z:** Przygotuj krótkie podsumowanie: które działy przekroczyły plan
-   > i o ile.
-   > **O:** Format tabeli, maksymalnie 6 wierszy, kwoty w PLN, jedno zdanie
-   > komentarza pod tabelą.
+   ```
+   P: Jesteś analitykiem finansowym przygotowującym materiał dla przełożonej.
+   K: Mam zestawienie miesięczne wydatków kilku (fikcyjnych) wydziałów urzędu.
+   Z: Przygotuj krótkie podsumowanie: które działy przekroczyły plan i o ile.
+   O: Format tabeli, maksymalnie 6 wierszy, kwoty w PLN, jedno zdanie
+      komentarza pod tabelą.
+   ```
 
 6. Sprawdź, czy tabela pojawiła się jako Artifact (osobny panel) – jeśli
-   tak, poproś o jedną modyfikację, np. posortowanie według wielkości
-   przekroczenia.
+   tak, poproś o jedną modyfikację:
+
+   ```
+   Posortuj tabelę malejąco według wielkości przekroczenia.
+   ```
+
 
 ### Część 3: Test na "brudnych" danych
 
 7. Celowo popsuj jedną komórkę w pliku (np. wpisz kwotę jako tekst zamiast
    liczby albo scal dwie komórki) i wgraj plik ponownie.
-8. Poproś: *"Porównaj ten plik z poprzednią wersją – co się zmieniło i czy
-   to wpływa na wynik podsumowania?"*
+8. Poproś:
+
+   ```
+   Porównaj ten plik z poprzednią wersją – co się zmieniło i czy to wpływa
+   na wynik podsumowania?
+   ```
+
 9. Zobacz, czy Claude samodzielnie zauważy problem, czy trzeba go było o to
    wprost zapytać – to ważna wskazówka na przyszłość: precyzyjne pytanie
    (Ograniczenia w P.K.Z.O.) działa lepiej niż liczenie na to, że AI samo

@@ -37,26 +37,36 @@ w [README](README.md#jak-zacząć-pracę-z-claude).
 
 1. Zaloguj się na [claude.ai](https://claude.ai) i rozpocznij nową rozmowę.
 2. **Zadaj najpierw "słabe" pytanie** – celowo ogólne, bez formuły, np.:
-   *"Napisz notatkę o wzroście wydatków."*
+
+   ```
+   Napisz notatkę o wzroście wydatków.
+   ```
+
    Przeczytaj odpowiedź i oceń, na ile nadawałaby się do wysłania dalej bez
    poprawek.
 3. **Teraz zbuduj prompt według P.K.Z.O.** – możesz wykorzystać poniższy
    przykład lub napisać własny na ten sam temat:
 
-   > **P:** Jesteś doradcą finansowym wspierającym urząd w komunikacji z
-   > radnymi.
-   > **K:** W zestawieniu miesięcznym wydatki na utrzymanie dróg wzrosły o
-   > 8% względem planu, głównie przez wyższe ceny materiałów.
-   > **Z:** Przygotuj krótką notatkę wyjaśniającą ten wzrost, którą można
-   > wysłać radnym przed sesją.
-   > **O:** Maksymalnie 6 zdań, ton rzeczowy i spokojny, bez żargonu
-   > finansowego, po polsku.
+   ```
+   P: Jesteś doradcą finansowym wspierającym urząd w komunikacji z radnymi.
+   K: W zestawieniu miesięcznym wydatki na utrzymanie dróg wzrosły o 8%
+      względem planu, głównie przez wyższe ceny materiałów.
+   Z: Przygotuj krótką notatkę wyjaśniającą ten wzrost, którą można wysłać
+      radnym przed sesją.
+   O: Maksymalnie 6 zdań, ton rzeczowy i spokojny, bez żargonu finansowego,
+      po polsku.
+   ```
 
 4. **Porównaj obie odpowiedzi.** Która jest bardziej konkretna? Która
    nadaje się do użycia bez poprawek?
 5. **Zmień jedno ograniczenie** i wyślij prompt ponownie – np. zamiast
-   8 punktów poproś o 4, albo zmień ton na bardziej swobodny. Zobacz, jak
-   jeden element formuły zmienia efekt.
+   6 zdań poproś o 3, albo zmień ton na bardziej swobodny:
+
+   ```
+   Skróć to do 3 zdań i napisz mniej formalnie.
+   ```
+
+   Zobacz, jak jeden element formuły zmienia efekt.
 6. **Napisz własny prompt P.K.Z.O.** dotyczący Twojej pracy lub
    wolontariatu i sprawdź wynik.
 
