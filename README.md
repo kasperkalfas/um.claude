@@ -1,136 +1,107 @@
 # Workshop Opole UM — Claude, Excel, PowerPoint i automatyzacja zadań
 
-Materiały do 3-dniowego szkolenia **„Wykorzystanie systemu AI Claude we
-współpracy z Excel, PowerPoint oraz automatyzacja zadań"** dla zespołu
-Urzędu Miejskiego w Opolu, organizowanego przez Park Naukowo-Technologiczny
-w Opolu.
+Materiały do 3-dniowego szkolenia **„Wykorzystanie systemu AI Claude we współpracy
+z Excel, PowerPoint oraz automatyzacja zadań"** dla zespołu finansowo-księgowego
+Urzędu Miejskiego w Opolu. Organizator: Park Naukowo-Technologiczny w Opolu.
 
-- **Prowadzący:** Kasper Kalfas (CloudKasper)
-- **Terminy:** 22, 23 i 25 września 2026, start 8:30, 4h dydaktyczne dziennie
-- **Miejsce:** PNT Opole, ul. Technologiczna 2B, sala 0.05
-- **Grupa:** 5 osób, zespół finansowo-księgowy (profil nietechniczny)
-- **Agenda:** [agenda/Agenda_szkolenia.md](agenda/Agenda_szkolenia.md)
+| | |
+|---|---|
+| **Prowadzący** | Kasper Kalfas (CloudKasper) |
+| **Terminy** | 22, 23 i 25 września 2026, start 8:30, 4 h dydaktyczne dziennie |
+| **Miejsce** | PNT Opole, ul. Technologiczna 2B, sala 0.05 |
+| **Grupa** | 5 osób, profil księgowo-finansowy, nietechniczny |
+| **Agenda** | [agenda/Agenda_szkolenia.md](agenda/Agenda_szkolenia.md) |
+
+> **Wszystkie dane w ćwiczeniach są fikcyjne.** Do Claude ani innych systemów AI nie
+> trafiają prawdziwe dane budżetowe, osobowe ani poufne Urzędu — patrz
+> [Bezpieczeństwo danych](#bezpieczeństwo-danych).
+
+## Plan szkolenia
+
+| Dzień | Data | Temat | Materiały |
+|---|---|---|---|
+| 1 | 22.09 | Podstawy AI, dane jako fundament, Claude Czat, pierwszy kontakt z Claude Code | `day-1/` |
+| 2 | 23.09 | Excel i automatyzacja z Claude Code; dodatki Claude w Excelu i PowerPoincie | `day-1/claude-code-cli/`, `day-2/` |
+| 3 | 25.09 | DataPOV, prezentacje z Claude, wizualizacja danych, mapowanie procesów | `day-3/` |
+
+### Dzień 1 — bloki
+
+| Blok | Czas | Temat | Materiały |
+|---|---|---|---|
+| A | 30 min | AI Intro → ML & Gen AI | `day-1/day-1-ai-intro.pptx` |
+| B | 30 min | Dane jako fundament — „Data First, AI Second" | `day-1/day-1-Data-First-AI-Second.pptx` |
+| C | 60 min | Claude Czat — interfejs i promptowanie | `day-1/day1-claude.pptx` + [`claude-zadania/`](day-1/claude-zadania/README.md) |
+| D | 60 min | Claude Code — pierwszy kontakt | [`claude-code/`](day-1/claude-code/README.md) zad. 6–16; wstęp: [`tokeny-i-okno-kontekstu/`](day-1/tokeny-i-okno-kontekstu/README.md) |
+| E | 60 min | Power BI / Excel z asystą AI | — (do przygotowania) |
+
+## Zestawy ćwiczeń
+
+Każdy folder ma własny `README.md` z kolejnością, minutażem i kluczem odpowiedzi.
+
+| Folder | Zadań | Kiedy | O czym |
+|---|---|---|---|
+| [`day-1/claude-zadania/`](day-1/claude-zadania/README.md) | 8 | Dzień 1, Blok C (1–3 na żywo) + praca własna (4–8) | Claude Czat: P.K.Z.O., interfejs, analiza arkusza, konektory, plany i limity, skille |
+| [`day-1/claude-code/`](day-1/claude-code/README.md) | 19 | Dzień 1, Blok D (6–16) + praca własna | Cowork, wtyczka Chrome, Claude Code w terminalu, nawigacja, tryby pracy, `CLAUDE.md` |
+| [`day-1/tokeny-i-okno-kontekstu/`](day-1/tokeny-i-okno-kontekstu/README.md) | 11 | Dzień 1, wstęp do Bloku D + demo + praca własna | Tokeny, okno kontekstu, `/context` `/compact` `/clear`, MCP, wtyczki; dashboard i prezentacja z wtyczką Data; prognoza; własna wtyczka Wydziału |
+| [`day-1/claude-code-cli/`](day-1/claude-code-cli/README.md) | 10 | Dzień 1–2 | Claude Code + Excel na Procesie 1 i 2: błędy w komórkach, przepis miesięczny → roczny, raport kontrolny, `CLAUDE.md`, komenda `/zamknij-miesiac` |
+| [`day-2/claude-w-excelu/`](day-2/claude-w-excelu/README.md) | 9 | Dzień 2 | Dodatek Claude w Excelu: EDA, formuły, wykresy, sortowanie, filtrowanie, formatowanie warunkowe, braki danych, model finansowy inwestycji |
+| [`day-2/claude-w-powerpoincie/`](day-2/claude-w-powerpoincie/README.md) | 6 | Dzień 2 (instalacja) → Dzień 3 | Dodatek Claude w PowerPoincie: prezentacja z jednego zdania, notatki prelegenta, slajd ze źródła, szablon Urzędu, poprawianie gotowej prezentacji |
+| [`day-2/obsidian-baza-wiedzy/`](day-2/obsidian-baza-wiedzy/README.md) | 4 | Dzień 2, Blok D / praca własna | Baza wiedzy Wydziału w Obsidianie budowana Claude Code: `CLAUDE.md`, procedury ze starych instrukcji, dziennik decyzji, komendy i Git |
 
 ## Struktura repozytorium
 
 ```
-agenda/        agenda szkolenia (md + pdf)
-day-1/         Dzień 1 – prezentacje i ćwiczenia (Claude Czat, Claude Code)
-  claude-zadania/      8 zadań z Claude Czat (3 na żywo w Bloku C + 5 dodatkowych)
-  claude-code/         19 krótkich zadań: Cowork, wtyczka Chrome, Claude Code – pierwszy kontakt (Blok D)
-  tokeny-i-okno-kontekstu/  11 zadań: tokeny (tokenizer), okno kontekstu, /context /compact /clear, oszczędne polecenia, MCP, wtyczki, dashboard i prezentacja z wtyczką Data, prognoza ze skillem z internetu, własna wtyczka Wydziału i jej wersja dla zespołu (wstęp do Bloku D + demo + praca własna)
-    materialy/           fikcyjne dane miesięczne 2023–2025 + kalendarz 2026 do prognozy (generuj_prognoza.py)
-  claude-code-cli/     10 zadań Claude Code + Excel: Proces 1 i 2, przepis, skrypt, własna komenda (Dzień 1)
-    materialy/         fikcyjne eksporty ERP, zestawienia, generator (generuj_dane.py)
-  materialy/           fikcyjne pliki Excel do ćwiczeń z czatu i Bloku D
-day-2/         Dzień 2 – Claude w Excelu (dodatek) + ścieżka Claude Code (w day-1/claude-code-cli/)
-  claude-w-excelu/     zadania z dodatkiem Claude by Anthropic w Excelu; materialy/Human_Resources.xlsx – fikcyjny zbiór kadrowy (1470 × 35)
-  claude-w-powerpoincie/  zadania z dodatkiem Claude by Anthropic w PowerPoincie (instalacja w Dniu 2, użycie w Dniu 3)
-day-3/         Dzień 3 – DataPOV i prezentacje
-  gamma_prezentacja_datapov.md   outline do gamma.app: Blok A (30 min) DataPOV dla Pani Skarbnik, przykład na danych fikcyjnych
-materialy/     materiały pomocnicze (data storytelling, DataPOV) – Dzień 3
-umowa/         dokumenty umowne i wzory (lokalnie, poza repozytorium)
-CLAUDE.md      kontekst projektu dla Claude Code (lokalnie, poza repozytorium)
+agenda/     agenda szkolenia (md + pdf)
+day-1/      prezentacje Bloków A–C (.pptx) + 4 zestawy ćwiczeń (patrz wyżej)
+day-2/      dodatki Claude w Excelu i PowerPoincie, baza wiedzy w Obsidianie
+day-3/      prezentacja DataPOV (Blok A) — DataPOV-punkt-widzenia-na-dane.pptx
+materialy/  materiały pomocnicze do Dnia 3 (data storytelling, DataPOV)
+umowa/      dokumenty umowne i wzory — lokalnie, poza repozytorium
+CLAUDE.md   kontekst projektu dla Claude Code — lokalnie, poza repozytorium
 ```
 
-Część plików jest celowo wyłączona z repozytorium przez `.gitignore`
-(umowa, notatki robocze, kontekst dla Claude Code) — patrz sekcja
-„Bezpieczeństwo danych".
+Pliki z `.gitignore` (umowa, notatki robocze, `CLAUDE.md`) nie trafiają do
+repozytorium ze względu na poufność.
 
-## Program
+## Dane wsadowe
 
-| Dzień | Data | Temat | Materiały |
-|---|---|---|---|
-| 1 | 22.09.2026 | Podstawy AI, dane jako fundament, Claude Czat, pierwszy kontakt z Claude Code, Power BI / Excel | `day-1/` — gotowe |
-| 2 | 23.09.2026 | Praca na komórkach Excela i automatyzacja z Claude Code (CLI) | `day-1/claude-code-cli/` — ćwiczenia i dane gotowe; [`day-2/claude-w-excelu/`](day-2/claude-w-excelu/README.md) — dodatek Claude w Excelu, [`day-2/claude-w-powerpoincie/`](day-2/claude-w-powerpoincie/README.md) — dodatek Claude w PowerPoincie (w budowie); prezentacja do przygotowania |
-| 3 | 25.09.2026 | DataPOV, prezentacje danych z Claude, wizualizacja w PowerPoint, mapowanie procesów | [`day-3/gamma_prezentacja_datapov.md`](day-3/gamma_prezentacja_datapov.md) — outline Bloku A (DataPOV) do gamma.app; `materialy/` — kontekst; Bloki B–E do przygotowania |
+Każdy zestaw ma podfolder `materialy/` z fikcyjnymi plikami. Tam, gdzie jest
+generator, `python <skrypt>.py` odtwarza czyste pliki i wypisuje klucz odpowiedzi.
 
-### Dzień 1 — zawartość
-
-| Blok | Czas | Temat | Plik |
-|---|---|---|---|
-| A | 30 min | AI Intro → ML & Gen AI | `day-1/day-1-ai-intro.pptx` |
-| B | 30 min | Dane jako fundament — „Data First, AI Second" | `day-1/day-1-data-first-ai-second.pptx` |
-| C | 60 min | Claude Czat w przeglądarce — interfejs i promptowanie | `day-1/day1-claude.pptx` + [`day-1/claude-zadania/`](day-1/claude-zadania/README.md) |
-| D | 60 min | Claude Code — pierwszy kontakt | [`day-1/claude-code/`](day-1/claude-code/README.md), zad. 6–16 (1–5: Cowork i wtyczka Chrome, praca własna); wstęp: [`day-1/tokeny-i-okno-kontekstu/`](day-1/tokeny-i-okno-kontekstu/README.md) |
-| E | 60 min | Power BI / Excel z asystą AI | — |
-
-### Dzień 1 — ćwiczenia Claude Code + Excel (`day-1/claude-code-cli/`)
-
-Szczegóły, mapowanie na bloki i klucz odpowiedzi: [day-1/claude-code-cli/README.md](day-1/claude-code-cli/README.md).
-
-| # | Zadanie | Część |
+| Folder | Pliki | Generator |
 |---|---|---|
-| 1 | Instalacja i pierwsze uruchomienie | Dzień 1, cz. 1 |
-| 2 | Nawigacja po folderach w języku naturalnym | Dzień 1, cz. 1 |
-| 3 | „Otwórz ten Excel i powiedz, co w nim jest" | Dzień 1, cz. 1 |
-| 4 | Błędy na poziomie komórek — znajdź i napraw | Dzień 1, cz. 2 |
-| 5 | Operacje na komórkach w języku naturalnym | Dzień 1, cz. 2 |
-| 6 | Proces 1: z eksportu ERP do zestawienia miesięcznego | Dzień 1, cz. 3 |
-| 7 | Proces 2: powtarzalny przepis z miesięcznego do rocznego | Dzień 1, cz. 3 |
-| 8 | Kolejny miesiąc od początku do końca + raport kontrolny | Dzień 1, cz. 3/4 |
-| 9 | Gdy Claude Code się myli — obsługa błędów | Dzień 1, cz. 4 |
-| 10 | CLAUDE.md z zasadami Wydziału i własna komenda „zamknij miesiąc" | Dzień 1, cz. 4 |
+| `day-1/materialy/` | 3 zestawienia miesięczne (jedno z 3 celowymi błędami, jedno z 10 wydziałami) + `test-claude-code/` | — |
+| `day-1/claude-code-cli/materialy/` | eksporty ERP (CSV), szablon miesięczny, plik roczny 2026, plik z błędami | `generuj_dane.py` |
+| `day-1/tokeny-i-okno-kontekstu/materialy/` | wykonanie miesięczne 2023–2025, kalendarz 2026 | `generuj_prognoza.py` |
+| `day-2/claude-w-excelu/materialy/` | `Human_Resources.xlsx` (1 470 × 35, kadrowy), założenia termomodernizacji | `generuj_termomodernizacja.py` |
+| `day-2/claude-w-powerpoincie/materialy/` | `wykonanie_budzetu_2026_8m.pptx` (prezentacja do poprawy) | `generuj_prezentacja.py` |
+| `day-2/obsidian-baza-wiedzy/materialy/` | fikcyjne źródła (instrukcje, maile, CSV) i szablony notatek | — |
 
-Dane wsadowe (`day-1/claude-code-cli/materialy/`) są fikcyjne i odtwarzalne:
-`python generuj_dane.py` nadpisuje wszystkie pliki czystą wersją i
-wypisuje klucz odpowiedzi.
-
-## Ćwiczenia z Claude (`day-1/claude-zadania/`)
-
-Szczegóły, kolejność i minutaż: [day-1/claude-zadania/README.md](day-1/claude-zadania/README.md).
-
-**Na żywo, Blok C (60 min):**
-
-1. Formuła P.K.Z.O. — skuteczne prompty (Persona, Kontekst, Zadanie, Ograniczenia)
-2. Funkcje interfejsu Claude — pliki, Artifacts, styl, pamięć
-3. Bezpieczna analiza arkusza budżetowego — wykrywanie błędów i podsumowanie
-
-**Materiał dodatkowy (praca własna po szkoleniu):**
-
-4. Google Calendar (+ odpowiednik Microsoft 365 w realiach Urzędu)
-5. Podróże: Booking.com i Kiwi.com (z rozróżnieniem od delegacji służbowej)
-6. Plany i limity — darmowy Claude, plan Team Urzędu, Claude Code
-7. Własny skill — notatka o odchyleniach budżetowych
-8. Gotowe skille z internetu — które przydadzą się w Urzędzie
-
-### Pliki wsadowe (`day-1/materialy/`)
-
-Wszystkie dane są **fikcyjne**, wzorowane na realnym procesie miesięcznego
-zestawienia budżetowego (eksport z ERP → Excel):
-
-| Plik | Zawartość | Użycie |
-|---|---|---|
-| `zestawienie_przykladowe.xlsx` | 7 wydziałów, bez błędów | zad. 2, 8 |
-| `zestawienie_miesieczne_PRZYKLAD.xlsx` | 3 celowe błędy: pusty wiersz, niespójne daty, scalona komórka | zad. 3 (klucz odpowiedzi w README zadań) |
-| `zestawienie_miesieczne_PODSUMOWANIE.xlsx` | 10 wydziałów, 7 przekracza plan | zad. 3, 7, 8 |
+Układ plików Excel (kody działów w kolumnie A, wiersze 6–13) jest wspólny dla
+szablonu miesięcznego i pliku rocznego, żeby „dopasowanie po kodzie działu" było
+ćwiczone jawnie.
 
 ## Bezpieczeństwo danych
 
-Wszystkie ćwiczenia działają **wyłącznie na danych fikcyjnych lub
-zanonimizowanych**, wzorowanych na procesach Urzędu. Do Claude ani innych
-systemów AI nie trafiają prawdziwe dane budżetowe, dane osobowe ani dane
-poufne Urzędu. Zasada ta jest omawiana z uczestnikami w Dniu 1 (Blok B) i
-powtarzana w każdym zadaniu; dotyczy także integracji z usługami
-zewnętrznymi (konektory, skille).
+Ćwiczenia działają **wyłącznie na danych fikcyjnych lub zanonimizowanych**,
+wzorowanych na procesach Urzędu. Zasada „co wolno, a czego nie wolno wklejać do
+Claude" jest omawiana w Dniu 1 (Blok B) i powtarzana w każdym zadaniu; dotyczy
+także konektorów, skilli i wtyczek. Dokumenty umowne i notatki robocze pozostają
+lokalnie, poza repozytorium.
 
-Z tego samego powodu dokumenty umowne i notatki robocze zawierające
-szczegóły współpracy pozostają lokalnie, poza repozytorium.
+## Status
 
-## Status i do zrobienia
-
-- [x] Dzień 1: prezentacje Bloków A–C, ćwiczenia z Claude Czat i Claude Code (Blok D), pliki wsadowe
+- [x] Dzień 1: prezentacje Bloków A–C, ćwiczenia Claude Czat i Claude Code, dane wsadowe
 - [ ] Dzień 1: materiały do Bloku E (Power BI / Excel)
-- [x] Dzień 1: 10 ćwiczeń z Claude Code + fikcyjne dane wsadowe z generatorem
-- [ ] Dzień 1: prezentacja wprowadzająca do Claude Code CLI (Blok A) i sprawdzenie wymagań technicznych na laptopach uczestników (Python, Git, Claude Code)
-- [x] Dzień 3: outline prezentacji Bloku A (DataPOV) do gamma.app
-- [ ] Dzień 3: prezentacje Bloków B–E (tworzenie prezentacji z Claude, wizualizacja, mapowanie procesów)
-- [ ] Po szkoleniu: listy obecności, certyfikaty, protokół realizacji
+- [ ] Dzień 1–2: prezentacja wprowadzająca do Claude Code CLI; sprawdzenie laptopów uczestników (Python + openpyxl, Git, Claude Code, dostęp do sklepu dodatków Office)
+- [x] Dzień 2: dodatki Claude w Excelu i PowerPoincie, baza wiedzy w Obsidianie
+- [x] Dzień 3: prezentacja Bloku A (DataPOV)
+- [ ] Dzień 3: Bloki B–E (prezentacje z Claude, wizualizacja, mapowanie procesów)
+- [ ] Po szkoleniu (do 29.09): listy obecności, certyfikaty, protokół realizacji
 
 ## Konwencje
 
-- Każdemu istotnemu dokumentowi źródłowemu (pdf/docx/pptx) towarzyszy
-  plik `kontekst_*.md` lub `opis_*.md` ze streszczeniem po polsku.
-- Zadania w `claude-zadania/` mają jednolitą strukturę: cel, poziom, czas,
-  materiały, kroki, „Na co zwrócić uwagę", „Notatki własne". Numer w nazwie
-  pliku odpowiada numerowi w nagłówku „Zadanie N".
+- Istotnym dokumentom źródłowym (pdf/docx/pptx) towarzyszy plik `kontekst_*.md`
+  lub `opis_*.md` ze streszczeniem po polsku.
+- Zadania mają jednolitą strukturę: cel, poziom, czas, materiały, kroki,
+  „Na co zwrócić uwagę", „Notatki własne". Numer w nazwie pliku = numer zadania.
