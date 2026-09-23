@@ -1,4 +1,4 @@
-# Workshop Opole UM — Claude, Excel, PowerPoint i automatyzacja zadań
+### Workshop Opole UM — Claude, Excel, PowerPoint i automatyzacja zadań
 
 Materiały do 3-dniowego szkolenia **„Wykorzystanie systemu AI Claude we współpracy
 z Excel, PowerPoint oraz automatyzacja zadań"** dla zespołu finansowo-księgowego
