@@ -1,7 +1,8 @@
 # Zadanie 5: Sortowanie słowami – rosnąco, malejąco, po dwóch kolumnach
 
 **Dzień 2, Blok B** · ok. 8 min · dodatek Claude w Excelu, **świeża kopia**
-`Human_Resources.xlsx` (np. `_zad5`) – sortowanie zmienia plik na stałe;
+`materialy/Human_Resources_zad5.xlsx` (z
+[`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx)) – sortowanie zmienia plik na stałe;
 Sonnet wystarczy.
 
 **Cel:** trzy sortowania jednym zdaniem każde i zobaczyć, co sortowanie

@@ -1,7 +1,8 @@
 # Zadanie 9: Model finansowy z założeń – czy termomodernizacja szkoły się opłaca
 
 **Dzień 2, Blok B** · ok. 20 min · dodatek Claude w Excelu, kopia
-`materialy/termomodernizacja_zalozenia.xlsx`, model **Opus**; Claude Czat
+`materialy/termomodernizacja_zalozenia_zad9.xlsx` (zapisana z
+[`materialy/termomodernizacja_zalozenia.xlsx`](materialy/termomodernizacja_zalozenia.xlsx)), model **Opus**; Claude Czat
 do kroku 6.
 
 **Cel:** z arkusza założeń zbudować jednym poleceniem model (NPV, okres
@@ -12,7 +13,7 @@ formuł** odwołujących się do założeń.
 4 200 000 zł, dotacja 45 %, oszczędność energii 310 000 zł/rok +4 %/rok,
 serwis 15 000 zł +3 %/rok, horyzont 15 lat, stopa 6 %, wartość rezydualna
 20 % nakładu, kredyt 5,5 % / 10 lat / raty równe.
-`generuj_termomodernizacja.py` odtwarza plik i wypisuje klucz.
+[`materialy/generuj_termomodernizacja.py`](materialy/generuj_termomodernizacja.py) odtwarza plik i wypisuje klucz.
 
 **Minimum teorii:** dyskontowanie – 310 000 zł za rok jest dziś warte
 `310 000 / 1,06 = 292 453`; NPV = suma zdyskontowanych oszczędności netto
@@ -101,9 +102,10 @@ Obie odpowiedzi poprawne.
 ### 6. To samo w Claude Czat
 
 claude.ai → nowa rozmowa → załącznik: **oryginalny**
-`termomodernizacja_zalozenia.xlsx` → to samo polecenie z kroku 2.
+[`materialy/termomodernizacja_zalozenia.xlsx`](materialy/termomodernizacja_zalozenia.xlsx) → to samo polecenie z kroku 2.
 Porównajcie: NPV to samo (± zaokrąglenia); dodatek buduje **w Waszym
-pliku** z linkami, czat oddaje **nowy plik** z opisem obliczeń. Dane
+pliku** z linkami, czat oddaje **nowy plik** z opisem obliczeń – pobrany zapiszcie w
+`materialy/`, nie w *Pobranych*. Dane
 opuszczają komputer w obu przypadkach.
 
 ### 7. Pytanie Skarbnika

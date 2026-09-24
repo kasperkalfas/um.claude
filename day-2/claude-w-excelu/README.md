@@ -13,6 +13,23 @@ komórek, piszą formuły) – różni je miejsce pracy: dodatek działa **w
 otwartym skoroszycie**, Claude Code **na plikach w folderze**. Blok C
 (automatyzacja miesięczna) i D (obsługa błędów) pozostają w Claude Code.
 
+## Materiały – wszystko w jednym miejscu
+
+Wszystkie pliki do zadań są w [`materialy/`](materialy/) i tam też
+zapisujecie kopie robocze – nic na Pulpicie, w *Pobranych* ani w OneDrive
+Urzędu. Na laptop kopiuje się cały folder `claude-w-excelu/` (zadania +
+`materialy/`), więc linki w zadaniach działają bez zmian.
+
+| Plik | Do czego |
+|---|---|
+| [`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx) | oryginał, zad. 1–8; po zad. 1 nietknięty |
+| `materialy/Human_Resources_zad2.xlsx` … `_zad8.xlsx` | kopia na każde zadanie (*Plik → Zapisz jako* w `materialy/`) |
+| [`materialy/termomodernizacja_zalozenia.xlsx`](materialy/termomodernizacja_zalozenia.xlsx) | oryginał, zad. 9 i załącznik do Claude Czat |
+| `materialy/termomodernizacja_zalozenia_zad9.xlsx` | kopia robocza zad. 9 |
+| [`materialy/generuj_termomodernizacja.py`](materialy/generuj_termomodernizacja.py) | dla prowadzącego – odtwarza plik zad. 9 i wypisuje klucz |
+
+Zepsuty plik = nowa kopia z oryginału w `materialy/`.
+
 ## Zadania
 
 - [ ] **[01 – Claude w Excelu – instalacja dodatku i pierwsze uruchomienie](01-claude-w-excelu-instalacja.md)** *(10 min)*
@@ -55,14 +72,14 @@ otwartym skoroszycie**, Claude Code **na plikach w folderze**. Blok C
       1 717 748, zwrot 7 lat, IRR 14,1 %, rata 306 463; bez dotacji NPV
       ujemne; test „zmień założenie – co się rusza"; to samo w Claude Czat.
 
-## Dane w `materialy/`
+## Dane w [`materialy/`](materialy/)
 
-`termomodernizacja_zalozenia.xlsx` (zad. 9) – 11 fikcyjnych założeń
+[`termomodernizacja_zalozenia.xlsx`](materialy/termomodernizacja_zalozenia.xlsx) (zad. 9) – 11 fikcyjnych założeń
 inwestycji (nakład, dotacja, oszczędności energii, stopa, kredyt) w
-jednym arkuszu `Zalozenia`; `generuj_termomodernizacja.py` odtwarza plik
+jednym arkuszu `Zalozenia`; [`generuj_termomodernizacja.py`](materialy/generuj_termomodernizacja.py) odtwarza plik
 i wypisuje klucz (NPV, okres zwrotu, IRR, rata, tabela wrażliwości).
 
-`Human_Resources.xlsx` – fikcyjny, anglojęzyczny zbiór kadrowy:
+[`Human_Resources.xlsx`](materialy/Human_Resources.xlsx) – fikcyjny, anglojęzyczny zbiór kadrowy:
 **1 470 pracowników × 35 kolumn** (jeden arkusz `Human_Resources`).
 Pracownicy mają tylko numer (`EmployeeNumber`), bez nazwisk. Kolumny w
 grupach:
@@ -99,7 +116,7 @@ Angielskie nagłówki są celowe: pokazują, że Claude tłumaczy strukturę
 | Excel z Microsoft 365 (desktop Windows lub przeglądarka) | starsze Excel 2016/2019 bez sklepu dodatków nie zadziałają |
 | Dostęp do sklepu dodatków Office | jeśli administrator M365 blokuje dodatki – IT musi dopuścić *Claude by Anthropic* |
 | Konto Claude w organizacji Urzędu (plan Team) | to samo co do czatu i Cowork |
-| Kopia `materialy/Human_Resources.xlsx` | jedyny plik otwierany z włączonym dodatkiem |
+| Folder [`materialy/`](materialy/) skopiowany razem z zadaniami | jedyne pliki otwierane z włączonym dodatkiem |
 
 > Zasada bezpieczeństwa danych z Dnia 1 (Blok B) obowiązuje bez
 > wyjątków: dodatek wysyła zawartość otwartego arkusza do dostawcy

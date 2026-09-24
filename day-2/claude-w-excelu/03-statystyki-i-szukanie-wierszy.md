@@ -1,7 +1,8 @@
 # Zadanie 3: Średnia, mediana, „który wiersz spełnia warunek" – Claude pisze formuły do komórek
 
 **Dzień 2, Blok B** · ok. 12 min · dodatek Claude w Excelu, **świeża kopia**
-`Human_Resources.xlsx` (np. `_zad3`), Sonnet wystarczy.
+`materialy/Human_Resources_zad3.xlsx` (z
+[`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx)), Sonnet wystarczy.
 
 **Cel:** wynik ma **zostać w arkuszu jako formuła** (nie liczba), z adresem
 komórki do kliknięcia.

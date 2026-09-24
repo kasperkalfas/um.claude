@@ -1,7 +1,8 @@
 # Zadanie 8: Braki danych – znaleźć, policzyć i zdecydować, co z nimi zrobić
 
 **Dzień 2, Blok B** · ok. 12 min · dodatek Claude w Excelu, **świeża kopia**
-`Human_Resources.xlsx` (np. `_zad8`); Opus lub Sonnet. Zadanie czyta cały
+`materialy/Human_Resources_zad8.xlsx` (z
+[`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx)); Opus lub Sonnet. Zadanie czyta cały
 arkusz – zużywa wyraźnie więcej limitu niż zad. 5–7.
 
 **Cel:** znaleźć puste komórki, a potem – zamiast „uzupełnij" – przejść

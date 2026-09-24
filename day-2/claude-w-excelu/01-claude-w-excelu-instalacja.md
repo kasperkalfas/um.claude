@@ -6,8 +6,10 @@ Urzędu (plan Team), dostęp do sklepu dodatków Office.
 **Cel:** dodać Claude do Excela jako dodatek i sprawdzić, że panel widzi
 otwarty arkusz bez wgrywania pliku.
 
-**Plik:** kopia `materialy/Human_Resources.xlsx` na Pulpicie (fikcyjne
-kadry, 1 470 wierszy × 35 kolumn, numer zamiast nazwiska).
+**Plik:** [`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx) (fikcyjne
+kadry, 1 470 wierszy × 35 kolumn, numer zamiast nazwiska). Folder
+`materialy/` to jedyne miejsce pracy – pliki startowe i wszystkie kopie
+z zadań 1–9 zostają w nim, nic na Pulpicie ani w *Pobranych*.
 
 > Dodatek wysyła zawartość otwartego arkusza do dostawcy modelu. Z
 > włączonym dodatkiem otwieramy **tylko plik fikcyjny**; inne skoroszyty
@@ -15,7 +17,7 @@ kadry, 1 470 wierszy × 35 kolumn, numer zamiast nazwiska).
 
 ## Instalacja (3 min)
 
-1. Otwórzcie `Human_Resources.xlsx`.
+1. Otwórzcie [`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx).
 2. Wstążka → **Dodatki** (albo *Wstawianie → Pobierz dodatki*) → wyszukajcie
    `Claude` → **Claude by Anthropic** → **Dodaj**. Po chwili: ikona na wstążce
    i panel po prawej.
@@ -51,5 +53,7 @@ zmienia komórki. Zmiany zaczynają się w zadaniu 2.
   (Proces 1 → 2) jest Claude Code.
 - Brak przycisku Dodatki / pusty sklep = blokada administratora M365 →
   zgłoszenie do IT o dopuszczenie *Claude by Anthropic* (przed Dniem 2).
-- Przed zadaniem 2 zapiszcie kopię pliku – od tej pory Claude pisze do
-  komórek.
+- `materialy/Human_Resources.xlsx` zostaje nietknięty jako oryginał. Od zadania 2
+  Claude pisze do komórek, więc każde zadanie zaczyna się od *Plik →
+  Zapisz jako* w `materialy/`: `Human_Resources_zad2.xlsx`,
+  `_zad3.xlsx` itd.

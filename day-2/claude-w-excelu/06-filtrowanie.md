@@ -1,8 +1,9 @@
 # Zadanie 6: Filtrowanie słowami – jeden warunek, dwa warunki naraz
 
 **Dzień 2, Blok B** · ok. 8 min · dodatek Claude w Excelu, kopia
-`Human_Resources.xlsx` w **oryginalnej kolejności** (np. `_zad6`, nie plik
-po zadaniu 5); Sonnet wystarczy.
+`materialy/Human_Resources_zad6.xlsx` w **oryginalnej kolejności**
+(zapisana z [`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx), nie z pliku po zadaniu 5);
+Sonnet wystarczy.
 
 **Cel:** filtr jednym zdaniem (jeden warunek, potem dwa) i policzenie
 widocznych wierszy formułą. Filtr – w odróżnieniu od sortowania – niczego

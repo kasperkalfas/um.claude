@@ -1,7 +1,8 @@
 # Zadanie 2: „Daj mi ogólne wnioski" – pierwsza analiza danych i jej kontrola
 
 **Dzień 2, Blok B** · ok. 15 min · dodatek Claude w Excelu (zad. 1),
-`Human_Resources.xlsx`, model Opus.
+kopia `materialy/Human_Resources_zad2.xlsx` (zapisana z
+[`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx)), model Opus.
 
 **Cel:** jednym zdaniem uzyskać przegląd zbioru, a potem **sprawdzić trzy
 liczby formułami** – Claude potrafi podać pewnie brzmiące, błędne

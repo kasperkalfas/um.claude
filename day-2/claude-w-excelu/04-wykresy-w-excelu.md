@@ -1,7 +1,8 @@
 # Zadanie 4: Wykresy jednym zdaniem – histogram, słupki, punkty, koło
 
 **Dzień 2, Blok B** · ok. 15 min · dodatek Claude w Excelu, kopia
-`Human_Resources.xlsx` (np. `_zad4`), Opus lub Sonnet.
+`materialy/Human_Resources_zad4.xlsx` (z
+[`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx)), Opus lub Sonnet.
 
 **Cel:** cztery wykresy z jednego zdania każdy; Claude buduje **tabelę
 pomocniczą**, potem **natywny wykres Excela**. Sprawdzamy tabelę, nie

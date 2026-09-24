@@ -1,8 +1,9 @@
 # Zadanie 7: Kolorowanie komórek słowami – tak/nie, skala kolorów, próg
 
 **Dzień 2, Blok B** · ok. 10 min · dodatek Claude w Excelu, kopia
-`Human_Resources.xlsx` (np. `_zad7`; może być plik z zad. 6, filtry
-zdjęte); Sonnet wystarczy.
+`materialy/Human_Resources_zad7.xlsx` (z
+[`materialy/Human_Resources.xlsx`](materialy/Human_Resources.xlsx); może być zapisana z
+pliku z zad. 6, filtry zdjęte); Sonnet wystarczy.
 
 **Cel:** Claude ma założyć **regułę formatowania warunkowego**, nie
 pomalować komórek na stałe. O znaczeniu koloru decydujecie Wy.
